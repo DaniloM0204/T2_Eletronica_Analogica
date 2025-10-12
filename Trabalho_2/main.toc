@@ -6,9 +6,8 @@
 \contentsline {section}{\numberline {5}Transistor Bipolar de Porta Isolada(IGBT)}{3}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Tiristor}{3}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Estrutura do IGBT}{3}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Componentes bipolares do IGBT}{4}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Modelagem matemática e física do IGBT}{4}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Design do componente}{4}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.3}Modelagem matemática e física do IGBT}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Design do componente}{4}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}}{4}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}}{4}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}}{4}{subsection.5.7}%
 \contentsline {section}{\numberline {6}Conclusões}{4}{section.6}%
