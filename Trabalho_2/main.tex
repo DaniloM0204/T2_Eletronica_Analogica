@@ -16,7 +16,7 @@
 \begin{titlepage}
     \begin{center}
         Universidade Federal de Santa Catarina\\
-        Departamento de Engenharias da Mobilidade \\ Eletrônica Análogica – EMB5116\\
+        Departamento de Engenharias da Mobilidade \\ Eletrônica Análogica - EMB5116\\
 
         \vspace{1.5cm}
         \includegraphics[width=0.28\textwidth]{./images/vertical_sigla_fundo_claro.png}
@@ -45,28 +45,66 @@
 \newpage
 
 \section{Introdução}
+
     Dispositivos transistores são utilizados comumente como meios de amplificar, ou chavear um circuito, de forma que o mesmo opere da maneira desejada no circuito. Dentre os transistores existentes os tipos mais comuns são os bipolares de junção,cujo são componentes formados pela junção de semicondutores,de forma que os agregando em conjuntos do tipo NPN ou PNP, forma-se um dispositivo que opera conforme é configurada sua polarização, porém assim como há a existência de componentes específicos dentro do mundo dos capacitores e resistores, dentro do mundo dos transistores existem os transistores de efeito de campo, que utilizam outra forma de controlar o fluxo de corrente por semicondutores. Neste trabalho serão descritos diferentes transistores de efeito de campo(FET) como,FET de junção (JFET),FET de Metal-Óxido-Semicondutor(MOSFET) e por último o Transistor Bipolar de Porta Isolada(IGBT) determinando como funciona cada um desses componentes, assim como será feita a comparação entre os mesmos, e por fim a comparação direta com transistores bipolares de junção.
 
 \newpage
+
 \section{Transistores de Efeito de Campo}
+
 \section{FET de junção(JFET)}
+
 \section{FET de Metal-Óxido-Semicondutor(MOSFET)}
+
+    O transistor MOSFET (acrônimo de Metal Oxide Semiconductor Field Effect Transistor, ou transistor de efeito de campo semicondutor de óxido metálico — TECMOS), é o tipo mais comum de transístores de efeito de campo em circuitos tanto digitais quanto analógicos. Seu princípio básico foi proposto pela primeira vez por Julius Edgar Lilienfeld, em 1925. 
+
+        \begin{figure}[h]
+            
+            \centering
+            \includegraphics[width=0.6\textwidth]{./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg}
+            \caption{MOSFET de potência.} 
+
+        \end{figure}
+
+        \begin{figure}[h]
+            
+            \centering
+            \includegraphics[width=0.6\textwidth]{./images/FET_cross_section.png}
+            \caption{Símbolo de esquema elétrico de um MOSFET.}
+
+        \end{figure}
+
+        \begin{figure}[h]
+            
+            \centering
+            \includegraphics[width=0.6\textwidth]{./images/Mosfet-wp.svg.png}
+            \caption{Símbolo de esquema elétrico de um MOSFET.}
+
+        \end{figure}
+
 \section{Transistor Bipolar de Porta Isolada(IGBT)}
-O tipo de transistor IGBT, pode ser definido de maneira técnica como um transistor formado com 3 terminais formando uma espécie de chave eletrônica, tendo como principal objetivo combinar alta eficiência com comutação rápida. A sua semelhança com o tiristor pode causar certa confusão pois sua definição também inclui a chave tripla,porém a ação do tiristor é diferente no sentido de, permitir apenas a ação do transistor presente, na faixa de operação do tiristor.
-    \subsection{Tiristor}
-    O tiristor diferente do IGBT,é um componente constituido de camadas que formam uma junção PNPN constituindo 4 camadas de formação tornando assim sua composição uma espécie de junção entre transistores do tipo PNP e NPN, seus terminais possuem ânodo,cátodo, e uma porta que funciona como um interrruptor, possuindo como modo de operação bloqueio reverso,direto e condução direta para controlar o fluxo de corrente no circuito. Suas aplicações são voltadas para sistemas de controle como controle de potência, motores e circuito de alarme.
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.45\textwidth]{./images/IGBT.png}
-        \includegraphics[width=0.45\textwidth]{./images/tiristor.png}
-    \caption{À esquerda: IGBT. À direita: Tiristor.}
-    \end{figure}
-    \subsection{Estrutura do IGBT}
-    A célula IGBT é construída semelhante ao MOSFET, porem a mudança está em que a parte n${^+}$ é substituida por uma camada coletora p${^+}$ desse modo forma um transistor PNP vertical, tal região coletora cria uma espécie de conexão do tipo Transistor Bipolar PNP com um MOSFET com a parte n${^+}$ na superfície, juntando assim o "melhor" dos dois dispositivos formando uma estrutura NPNP.
-    \subsection{Modelagem matemática e física do IGBT}
-    \subsection{Design do componente}
-    \subsection{}
-    \subsection{}
+
+    O tipo de transistor IGBT, pode ser definido de maneira técnica como um transistor formado com 3 terminais formando uma espécie de chave eletrônica, tendo como principal objetivo combinar alta eficiência com comutação rápida. A sua semelhança com o tiristor pode causar certa confusão pois sua definição também inclui a chave tripla,porém a ação do tiristor é diferente no sentido de, permitir apenas a ação do transistor presente, na faixa de operação do tiristor.
+
+        \subsection{Tiristor}
+
+        O tiristor diferente do IGBT,é um componente constituido de camadas que formam uma junção PNPN constituindo 4 camadas de formação tornando assim sua composição uma espécie de junção entre transistores do tipo PNP e NPN, seus terminais possuem ânodo,cátodo, e uma porta que funciona como um interrruptor, possuindo como modo de operação bloqueio reverso,direto e condução direta para controlar o fluxo de corrente no circuito. Suas aplicações são voltadas para sistemas de controle como controle de potência, motores e circuito de alarme.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.45\textwidth]{./images/IGBT.png}
+            \includegraphics[width=0.45\textwidth]{./images/tiristor.png}
+        \caption{À esquerda: IGBT. À direita: Tiristor.}
+        \end{figure}
+        \subsection{Estrutura do IGBT}
+
+        A célula IGBT é construída semelhante ao MOSFET, porem a mudança está em que a parte n${^+}$ é substituida por uma camada coletora p${^+}$ desse modo forma um transistor PNP vertical, tal região coletora cria uma espécie de conexão do tipo Transistor Bipolar PNP com um MOSFET com a parte n${^+}$ na superfície, juntando assim o "melhor" dos dois dispositivos formando uma estrutura NPNP.
+
+        \subsection{Modelagem matemática e física do IGBT}
+        \subsection{Design do componente}
+        \subsection{}
+        \subsection{}
+
 \section{Conclusões}
 
     Com este trabalho foi possível compreender de forma mais clara os tipos e funcionalidades dos resistores e capacitores em diferentes circuitos eletrônicos, abordando desde materiais de fabricação dos componentes a casos especiais de aplicações específicas. Com isso evidenciando que a escolha do tipo adequado de componente é parte fundamental na construção de qualquer tipo de circuito, dependendo diretamente das condições de operação do circuito, sendo necessário considerar a tolerância, dissipação de potência, tensão de trabalho, resistência interna do capacitor e estabilidade térmica necessária para cada caso.
