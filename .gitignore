@@ -1,0 +1,41 @@
+# Ignore LaTeX intermediate and output files
+*.aux
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.brf
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.glg
+*.glo
+*.gls
+*.ist
+*_minted-* 
+_minted*
+*.run.xml
+
+# Ignore generated PDF files
+*.pdf
+
+# Common build directories
+_build/
+build/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
