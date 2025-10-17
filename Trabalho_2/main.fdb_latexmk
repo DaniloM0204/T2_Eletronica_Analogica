@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1760659025.19237 0
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1760729909.11876 0
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1233624470 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
   "main.aux" 0 -1 0 "pdflatex"
   "referencia.bib" 0 -1 0 ""
@@ -7,9 +7,9 @@
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1760659023.91436 "/home/stein/Documents/LaTeX/T2_Eletronica_Analogica/Trabalho_2/main.tex" "main.pdf" "main" 1760659025.19275 0
+["pdflatex"] 1760729907.75847 "/home/stein/Documents/LaTeX/T2_Eletronica_Analogica/Trabalho_2/main.tex" "main.pdf" "main" 1760729909.11897 0
   "/etc/texmf/web2c/texmf.cnf" 1760639926.63516 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/stein/Documents/LaTeX/T2_Eletronica_Analogica/Trabalho_2/main.tex" 1760659022.37128 6606 710e9590f4a212b6ad829bc840034fa6 ""
+  "/home/stein/Documents/LaTeX/T2_Eletronica_Analogica/Trabalho_2/main.tex" 1760729906.10729 9681 b164a0dfe9deb0d3d8c77323a52c639b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -91,12 +91,13 @@
   "images/IGBT.png" 1760640583.46779 10986 d0c58402bef9d383f79b910a4804bea4 ""
   "images/Mosfet-wp.svg.png" 1760657204.62172 10882 fc7f31f4454012f86b1882d4df7c3d61 ""
   "images/tiristor.png" 1760640583.46883 30779 7ae2b138616aff1cefabdad9bd83a106 ""
+  "images/transisCampo.jpg" 1760727877.53673 40419 e14283e47d5f3bee84cd656cabfa923a ""
   "images/vertical_sigla_fundo_claro.png" 1760640583.47412 207833 b6be38875790a14bd4f3c02459f9a90c ""
-  "main.aux" 1760659024.85728 2394 ed7901f04ad1fddec38722c624ed2596 "pdflatex"
+  "main.aux" 1760729908.76928 2692 1cdbaf126d6c794943c6273e1b211572 "pdflatex"
   "main.bbl" 0 -1 0 "bibtex main"
-  "main.out" 1760659024.85828 1852 c07a254e041be18c6c3d95f6f65efea8 "pdflatex"
-  "main.tex" 1760659022.37128 6606 710e9590f4a212b6ad829bc840034fa6 ""
-  "main.toc" 1760659024.85928 1001 7d3c908d07c87bf1a9af87395ffe7bfb "pdflatex"
+  "main.out" 1760729908.77128 1852 c07a254e041be18c6c3d95f6f65efea8 "pdflatex"
+  "main.tex" 1760729906.10729 9681 b164a0dfe9deb0d3d8c77323a52c639b ""
+  "main.toc" 1760729908.77128 1001 d1005c63ce23de5e090b2c2db3b1c4d4 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
