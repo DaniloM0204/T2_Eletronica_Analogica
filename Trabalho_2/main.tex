@@ -85,7 +85,7 @@
 
         \end{figure}
         
-        Uma fina película de óxido de metal isola a região de comporta da região do canal que liga o dreno à fonte. Isso faz com que a impedância de entrada do MOSFET seja muito alta, o que significa que ele consome muito pouca corrente da fonte de sinal que está dirigindo a comporta. Essa característica torna os MOSFETs ideais para circuitos de alta impedância, como amplificadores de áudio e circuitos digitais. Além disso, os MOSFETs são capazes de operar em frequências muito altas, tornando-os adequados para aplicações em rádio frequência (RF) e micro-ondas.
+    Uma fina película de óxido de metal isola a região de comporta da região do canal que liga o dreno à fonte. Isso faz com que a impedância de entrada do MOSFET seja muito alta, o que significa que ele consome muito pouca corrente da fonte de sinal que está dirigindo a comporta. Essa característica torna os MOSFETs ideais para circuitos de alta impedância, como amplificadores de áudio e circuitos digitais. Além disso, os MOSFETs são capazes de operar em frequências muito altas, tornando-os adequados para aplicações em rádio frequência (RF) e micro-ondas.
 
         \begin{figure}[htpb!]
             
@@ -95,14 +95,113 @@
 
         \end{figure}
 
+    A palavra "metal" no nome é um anacronismo vindo dos primeiros chips, onde as comportas (gates) eram de metal. Os chips modernos usam comportas de polissilício, mas ainda são chamados de MOSFETs. Um MOSFET é composto de um canal de material semicondutor de tipo N ou de tipo P e é chamado respectivamente de NMOS ou PMOS. Geralmente o semicondutor escolhido é o silício, mas alguns fabricantes, principalmente a IBM, começaram a usar uma mistura de silício e germânio (SiGe) nos canais dos MOSFETs. Infelizmente muitos semicondutores com melhores propriedades elétricas do que o silício, tais como o arsenieto de gálio, não formam bons óxidos nas comportas e portanto não são adequados para os MOSFETs. O IGFET é um termo relacionado que significa Insulated-Gate Field Effect Transistor, e é quase sinônimo de MOSFET, embora ele possa se referir a um FET com comporta isolada por um isolante não óxido.
 
+    O terminal de comporta é uma camada de polissilício (sílicio policristalino) colocada sobre o canal, mas separada do canal por uma fina camada de dióxido de silício isolante. Quando uma tensão é aplicada entre os terminais comporta (gate) e fonte (source), o campo elétrico gerado penetra através do óxido e cria uma espécie de "canal invertido" no canal original abaixo dele. O canal invertido é do mesmo tipo P ou tipo N, como o da fonte ou do dreno, assim, ele cria um condutor através do qual a corrente elétrica possa passar. Variando-se a tensão entre a comporta e a fonte se modula a condutividade dessa camada e torna possível se controlar o fluxo de corrente entre o dreno e a fonte. Existem também modelos de Amplificador operacional baseados na tecnologia FET/MOSFET, muito úteis e com grande utilização na indústria eletrônica.
 
-        A palavra "metal" no nome é um anacronismo vindo dos primeiros chips, onde as comportas (gates) eram de metal. Os chips modernos usam comportas de polissilício, mas ainda são chamados de MOSFETs. Um MOSFET é composto de um canal de material semicondutor de tipo N ou de tipo P e é chamado respectivamente de NMOS ou PMOS. Geralmente o semicondutor escolhido é o silício, mas alguns fabricantes, principalmente a IBM, começaram a usar uma mistura de silício e germânio (SiGe) nos canais dos MOSFETs. Infelizmente muitos semicondutores com melhores propriedades elétricas do que o silício, tais como o arsenieto de gálio, não formam bons óxidos nas comportas e portanto não são adequados para os MOSFETs. O IGFET é um termo relacionado que significa Insulated-Gate Field Effect Transistor, e é quase sinônimo de MOSFET, embora ele possa se referir a um FET com comporta isolada por um isolante não óxido.
+        \subsection{Estrutura do MOSFET}
 
-        O terminal de comporta é uma camada de polissilício (sílicio policristalino) colocada sobre o canal, mas separada do canal por uma fina camada de dióxido de silício isolante. Quando uma tensão é aplicada entre os terminais comporta (gate) e fonte (source), o campo elétrico gerado penetra através do óxido e cria uma espécie de "canal invertido" no canal original abaixo dele. O canal invertido é do mesmo tipo P ou tipo N, como o da fonte ou do dreno, assim, ele cria um condutor através do qual a corrente elétrica possa passar. Variando-se a tensão entre a comporta e a fonte se modula a condutividade dessa camada e torna possível se controlar o fluxo de corrente entre o dreno e a fonte. Existem também modelos de Amplificador operacional baseados na tecnologia FET/MOSFET, muito úteis e com grande utilização na indústria eletrônica.
+            O MOSFET é um dispositivo de quatro terminais: dreno (drain), fonte (source), porta (gate) e substrato (bulk). Em dispositivos discretos o substrato costuma estar ligado à fonte, de modo que apenas três terminais são acessíveis. Dois parâmetros geométricos importantes são a largura do canal $W$ e o comprimento do canal $L$. A espessura da camada de óxido da porta, $t_{ox}$, determina a capacitância por unidade de área $C_{ox}$; em geral, quanto menor $t_{ox}$, maior $C_{ox}$ e maior a influência da tensão de porta sobre o canal.
 
+        \subsection{Modos de operação do MOSFET}
 
+            A operação do MOSFET (assumindo NMOS) pode ser dividida em três regimes principais:
 
+                \begin{itemize}
+                    
+                    \item \textbf{Região de corte:} quando $V_{GS}<V_{th}$. O canal não está formado e o transistor permanece desligado (apenas corrente de fuga).
+
+                    \item \textbf{Região linear (triode):} quando $V_{GS}>V_{th}$ e $V_{DS}<V_{GS}-V_{th}$. Nesta região o canal está formado por toda a extensão entre dreno e fonte e o MOSFET se comporta aproximadamente como um resistor controlado por $V_{GS}$. Uma expressão aproximada da corrente de dreno é
+                    \[
+                    I_D = \mu_n C_{ox} \frac{W}{L}\left((V_{GS}-V_{th})V_{DS}-\tfrac{1}{2}V_{DS}^2\right),
+                    \]
+                    onde $\mu_n$ é a mobilidade dos portadores e $C_{ox}$ a capacitância do óxido por unidade de área.
+
+                    \item \textbf{Região de saturação:} quando $V_{GS}>V_{th}$ e $V_{DS}\ge V_{GS}-V_{th}$. O canal sofre "pinch-off" próximo ao dreno e a corrente de dreno aproxima-se de
+                    \[
+                    I_D = \tfrac{1}{2}\,\mu_n C_{ox} \frac{W}{L}(V_{GS}-V_{th})^2.
+                    \]
+
+                        \begin{figure}[htpb!]
+                        
+                            \centering
+                            \includegraphics[width=0.6\textwidth]{./images/MOSFET_enhancement-mode_n-channel.svg.png}
+                            \caption{Diagrama das regiões de operação do MOSFET.}
+
+                        \end{figure}
+
+                \end{itemize}
+
+            Em circuitos digitais, os MOSFETs são usadas preferencialmente as regiões de corte e região ôhmica. Em circuitos analógicos é usado o transístor em modo de saturação, o que costuma fazer confusão com o modo de saturação dos transístores bipolares de junção que são substancialmente diferentes. A saturação nos MOS é análoga a Zona Ativa Direta dos TBJ.
+                
+        \subsection{Circuitos práticos}
+
+            \begin{itemize}
+
+                \item \textbf{AMPLIFICADOR DE BANDA LARGA:} O circuito mostrado na figura \ref{fig:amplificador} pode amplificar sinais que vão desde a faixa de áudio até 10 MHz.
+                
+                    \begin{figure}[htpb!]
+                        
+                        \centering
+                        \includegraphics[width=0.6\textwidth]{./images/Amplificador banda larga.jpg}
+                        \caption{Circuito do amplificador de banda larga.}
+                        \label{fig:amplificador}
+
+                    \end{figure}
+                A faixa muito larga de frequências de operação e sua impedância de entrada da ordem de 1 M ? o torna ideal como etapa de entrada para instrumentos tais como frequencímetros ou mesmo osciloscópio.
+
+                A intensidade máxima do sinal de entrada (a partir do qual temos a saturação) é da ordem de 100 mVrms.
+
+                A amplitude máxima do sinal de saída é de 1 Vrms.
+
+                O indutor que serve de carga para a saída é ajustado para se obter com o trimmer o ganho máximo do circuito na frequência de 10 MHz, mas dependendo da aplicação estes componentes podem ser alterados.
+
+                Observe que uma das comportas tem uma polarização fixa dada por R2 e R3 de modo a levar o componente a uma corrente de repouso ideal para a aplicação.
+
+                \item \textbf{SEGUIDOR DE FONTE}: Um seguidor de fonte é um amplificador que tem um ganho de tensão unitário, porém uma elevadíssima impedância de entrada e uma impedância muito baixa de saída. O circuito da figura \ref{fig:seguidor} mostra uma aplicação deste tipo que pode ser considerada equivalente ao seguidor de tensão normalmente feito com amplificadores operacionais.
+                
+                    \begin{figure}[htpb!]
+                        
+                        \centering
+                        \includegraphics[width=0.6\textwidth]{./images/Seguidor de fonte.jpg}
+                        \caption{Circuito do seguidor de fonte.}
+                        \label{fig:seguidor}
+
+                    \end{figure}
+
+                Neste caso a amplitude máxima do sinal de entrada antes do qual se obtém a saturação é da ordem de 2 volts e a amplitude máxima do sinal de saída é da ordem de 1,5 Vrms.
+
+                Dentre as aplicações recomendadas para este circuito podemos citar o casamento de impedância de fontes de sinais de áudio como, por exemplo, microfones.
+
+                \item \textbf{PROVADOR DE BOBINAS E CAPACITORES}: O circuito da figura \ref{fig:provador} é uma ponte que serve tanto para medida de capacitâncias como indutâncias e faz uso de um transistor de efeito de campo MOS de canal duplo alimentado por uma tensão de 9 V.
+            
+                    \begin{figure}[htpb!]
+                        
+                        \centering
+                        \includegraphics[width=0.6\textwidth]{./images/Provador de bobinas e capacitores.jpg}
+                        \caption{Circuito do provador de bobinas e capacitores.}
+                        \label{fig:provador}
+
+                    \end{figure}
+
+                O princípio de funcionamento é simples: aplica-se o sinal de um gerador de sinais na entrada, a frequência vai depender da ordem de grandeza da indutância ou da capacitância medida - normalmente ela estará entre 20 Hz e 20 kHz para medidas de capacitância entre 50 nF e 50 000 µF e indutâncias entre 5 mH e 6000 Hz com os valores de capacitância e indutância de referência usados.
+
+                \item \textbf{ELETROSCÓPIO}: O circuito mostrado na figura \ref{fig:Eletroscópio} é de um simples eletroscópio eletrônico que pode ser usado com vantagem nas aulas de física substituindo o tradicional eletroscópio de folhas de ouro.
+                
+                    \begin{figure}[htpb!]
+                        
+                        \centering
+                        \includegraphics[width=0.6\textwidth]{./images/Eletroscópio.jpg}
+                        \caption{Circuito do eletroscópio.}
+                        \label{fig:Eletroscópio}
+
+                    \end{figure}
+
+                O circuito é alimentado por uma bateria de 9 V e o eletrodo sensor pode ser uma pequena argola de fio descascado ou ainda uma esfera de metal.
+
+                Para testar atrite um pente ou caneta num pedaço de tecido e aproxime-o do sensor. A agulha do instrumento indicador deve oscilar fortemente.
+
+            \end{itemize}
 
 \section{Transistor Bipolar de Porta Isolada(IGBT)}
 
