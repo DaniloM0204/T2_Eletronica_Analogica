@@ -80,19 +80,19 @@ Somente a partir da década de 1950, com o avanço dos processos de dopagem e cr
 \subsection{Princípio de Funcionamento}
 
 
-O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e Drain (D). Seu funcionamento baseia-se no controle do fluxo de portadores de carga através de um canal semicondutor (de tipo N ou P), que é modulado pela tensão aplicada entre o gate e a fonte. 
+O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e Drain (D). Seu funcionamento baseia-se no controle do fluxo de portadores de carga através de um canal semicondutor (de tipo N ou P), que é modulado pela tensão aplicada entre o gate e a fonte.
 
 \begin{itemize}
-    \item \textbf{Gate (G) — Porta:} É o terminal responsável pelo controle do fluxo de corrente no canal. 
-    O gate é formado por uma junção PN polarizada reversamente em relação ao canal, o que faz com que praticamente não haja corrente fluindo pelo gate. 
+    \item \textbf{Gate (G) — Porta:} É o terminal responsável pelo controle do fluxo de corrente no canal.
+    O gate é formado por uma junção PN polarizada reversamente em relação ao canal, o que faz com que praticamente não haja corrente fluindo pelo gate.
     A tensão aplicada entre o gate e a fonte ($V_{GS}$) cria um campo elétrico que modula a largura efetiva do canal, controlando assim a corrente que circula entre o dreno e a fonte.
 
-    \item \textbf{Source (S) — Fonte:} É o terminal por onde os portadores de carga entram no canal. 
-    Para um JFET de canal N, os portadores são elétrons; para um JFET de canal P, são lacunas. 
+    \item \textbf{Source (S) — Fonte:} É o terminal por onde os portadores de carga entram no canal.
+    Para um JFET de canal N, os portadores são elétrons; para um JFET de canal P, são lacunas.
     A tensão do gate é sempre medida em relação à fonte ($V_{GS}$), tornando o \textit{source} o terminal de referência para o controle do dispositivo.
 
-    \item \textbf{Drain (D) — Dreno:} É o terminal por onde os portadores de carga saem do canal após percorrê-lo. 
-    A corrente que flui do dreno para a fonte ($I_D$) depende da tensão $V_{GS}$ aplicada ao gate e da tensão $V_{DS}$ aplicada entre o dreno e a fonte. 
+    \item \textbf{Drain (D) — Dreno:} É o terminal por onde os portadores de carga saem do canal após percorrê-lo.
+    A corrente que flui do dreno para a fonte ($I_D$) depende da tensão $V_{GS}$ aplicada ao gate e da tensão $V_{DS}$ aplicada entre o dreno e a fonte.
     Quando $V_{GS}$ se torna mais negativo (no caso de um JFET de canal N), a região de depleção se expande, estreitando o canal e reduzindo a corrente $I_D$, até o ponto de corte (pinch-off).
 \end{itemize}
 
@@ -101,7 +101,7 @@ O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e
             \includegraphics[width=0.8\linewidth]{images/pn.png}
             \caption{Representação de um JFET}
         \end{figure}
-                
+
 \subsubsection{Fluxo de Corrente no Canal}
 
 Quando uma tensão \(V_{DS}\) é aplicada entre o dreno e a fonte, uma corrente \(I_D\) começa a fluir através do canal, composta por elétrons (no JFET de canal N) ou lacunas (no JFET de canal P). A magnitude dessa corrente depende da largura efetiva do canal condutor.
@@ -115,7 +115,7 @@ O gate é uma junção PN polarizada reversamente. Isso significa que praticamen
             \caption{JFET de canal n reversamente polarizado}
             \label{fig:JFET}
         \end{figure}
-                
+
 \subsubsection{Efeito da Polarização do Gate}
 
 O gate é constituído por uma junção PN polarizada reversamente em relação ao canal. Nessa condição, praticamente não há corrente fluindo pelo gate, pois a barreira de potencial da junção impede o movimento de portadores de carga. Apesar disso, a polarização reversa provoca o alargamento da região de depleção, que se estende lateralmente a partir das junções PN em direção ao interior do canal.
@@ -130,13 +130,13 @@ O gate é constituído por uma junção PN polarizada reversamente em relação 
 
 \subsubsection{Equação de Shockley}
 
-A característica fundamental do JFET é o controle da corrente do canal por meio do campo elétrico estabelecido pela tensão \(V_{GS}\).  
+A característica fundamental do JFET é o controle da corrente do canal por meio do campo elétrico estabelecido pela tensão \(V_{GS}\).
 Para um JFET de canal N:
 \begin{itemize}
     \item Quando \(V_{GS} = 0\), o canal apresenta sua máxima condutividade, e a corrente \(I_D\) atinge o valor máximo \(I_{DSS}\).
-    
+
     \item À medida que \(V_{GS}\) torna-se negativo, as regiões de depleção em torno do gate aumentam, estreitando o canal e reduzindo \(I_D\).
-    
+
     \item Quando \(V_{GS}\) atinge a tensão de corte \(V_P\), o canal é completamente bloqueado, e \(I_D \approx 0\).
 \end{itemize}
 
@@ -150,16 +150,16 @@ I_D = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2
 Para o transistor JFET pode-se distinguir três regiões principais de operação:
 
 \begin{enumerate}
-    \item \textbf{Região ôhmica (ou linear):} 
+    \item \textbf{Região ôhmica (ou linear):}
     Quando $V_{DS}$ é pequeno, a corrente $I_D$ é aproximadamente proporcional à tensão $V_{DS}$, obedecendo uma relação quase linear. O dispositivo atua como um resistor controlado por tensão, e o canal permanece totalmente aberto.
 
-    \item \textbf{Região de saturação (ou ativa):} 
-    À medida que $V_{DS}$ aumenta, a tensão no dreno se torna mais positiva em relação ao gate, fazendo com que a região de depleção se expanda mais próxima ao dreno do que ao source. 
-    Em um ponto específico, conhecido como tensão de estrangulamento ou pinch-off ($V_P$), as regiões de depleção provenientes das laterais do canal se encontram, estrangulando-o. 
-    A partir desse ponto, o aumento de $V_{DS}$ não causa um aumento significativo em $I_D$, e a corrente se torna praticamente constante. 
+    \item \textbf{Região de saturação (ou ativa):}
+    À medida que $V_{DS}$ aumenta, a tensão no dreno se torna mais positiva em relação ao gate, fazendo com que a região de depleção se expanda mais próxima ao dreno do que ao source.
+    Em um ponto específico, conhecido como tensão de estrangulamento ou pinch-off ($V_P$), as regiões de depleção provenientes das laterais do canal se encontram, estrangulando-o.
+    A partir desse ponto, o aumento de $V_{DS}$ não causa um aumento significativo em $I_D$, e a corrente se torna praticamente constante.
     O JFET opera, então, como uma fonte de corrente controlada por tensão.
 
-    \item \textbf{Região de corte:} 
+    \item \textbf{Região de corte:}
     Quando $V_{GS}$ é suficientemente negativo (em módulo igual ou superior a $V_P$), o canal é completamente bloqueado pela expansão das regiões de depleção, impedindo o fluxo de corrente. Nessa condição, $I_D$ é aproximadamnete 0.
 \end{enumerate}
 
@@ -183,9 +183,9 @@ Características da estrutura física:
 
 
     \item \textbf{Junções Gate-Canal:} As regiões de dopagem do gate são fortemente dopadas para formar junções PN eficientes. A polarização reversa dessas junções controla a largura efetiva do canal.
-    
-    \item \textbf{Terminais Source e Drain:} Conectados nas extremidades do canal, permitem a entrada e saída de portadores de carga. 
-    
+
+    \item \textbf{Terminais Source e Drain:} Conectados nas extremidades do canal, permitem a entrada e saída de portadores de carga.
+
     \item \textbf{Substrato:} Pode estar conectado ao gate (common gate) ou flutuante, dependendo do design. Em alguns casos, o substrato é de tipo oposto ao canal e atua como um dissipador térmico e suporte mecânico.
 \end{itemize}
 
@@ -195,9 +195,9 @@ O controle da dopagem é crítico no projeto de JFETs, pois determina parâmetro
 
 \begin{itemize}
     \item Dopagem do canal: Uma dopagem mais leve aumenta a resistência do canal e permite maior controle da corrente pelo gate, mas reduz \(I_{DSS}\).
-    
+
     \item Dopagem do gate: Alta dopagem assegura junções PN de baixa resistência e pequena capacitância reversa, fundamental para alta frequência.
-    
+
     \item Material semicondutor: Silício é predominante, mas arseneto de gálio (GaAs) é usado em JFETs de RF devido à maior mobilidade de elétrons e menor ruído.
 \end{itemize}
 
@@ -213,11 +213,11 @@ O comprimento do canal, medido entre os terminais source e drain impactam:
 
 \begin{itemize}
     \item \textbf{Resistência do canal:} Um canal mais longo aumenta a resistência ôhmica \(R_{DS(on)}\), reduzindo a corrente máxima \(I_{DSS}\). A relação aproximada é \((R \propto L)/W\), considerando dopagem uniforme.
-    
+
     \item \textbf{Linearidade em pequenos sinais:} Canais longos distribuem melhor o campo elétrico, reduzindo a distorção harmônica em amplificadores de baixa tensão.
 
     \item \textbf{Controle do pinch-off:} Comprimentos maiores tornam a transição entre a região ôhmica e a saturação mais suave, melhorando o controle da corrente.
-    
+
     \item \textbf{Efeito de capacitâncias parasitas:} Canais longos podem aumentar a capacitância gate-drain \(C_{GD}\), afetando a resposta em alta frequência.
 \end{itemize}
 
@@ -237,9 +237,9 @@ A espessura efetiva do canal e o perfil de dopagem influenciam:
 
 \begin{itemize}
     \item \textbf{Resistência de condução:} Canais mais finos ou menos dopados aumentam a resistência e reduzem \(I_{DSS}\), mas melhoram a linearidade.
-    
+
     \item \textbf{Uniformidade do campo elétrico:} Perfis de dopagem gradientes permitem uma variação controlada da resistência ao longo do canal, suavizando o efeito de pinch-off.
-    
+
     \item \textbf{Ruído térmico:} Canais finos geram menos corrente de ruído, essencial em aplicações de instrumentação de precisão.
 \end{itemize}
 
@@ -249,7 +249,7 @@ A razão \(W/L\) é frequentemente usada como parâmetro de projeto:
 
 \begin{itemize}
     \item \textbf{Alta \(W/L\):} Favorece alta corrente \(I_{DSS}\) e menor resistência do canal, mas pode aumentar capacitâncias parasitas e reduzir linearidade.
-    
+
     \item \textbf{Baixa \(W/L\):} Melhora linearidade e controle de corrente, mas limita \(I_{DSS}\) e aumenta a resistência.
 \end{itemize}
 
@@ -263,9 +263,9 @@ Devido à sua alta impedância de entrada e baixo ruído térmico, os JFETs são
 
 \begin{itemize}
     \item \textbf{Pré-amplificadores de microfone:} Mantêm a integridade do sinal e minimizam a interferência de ruído da fonte de sinal.
-    
+
     \item \textbf{Amplificadores de instrumentação:} Em sistemas de medição de sinais muito pequenos, como sensores de temperatura ou tensão de strain gauge.
-    
+
     \item \textbf{Amplificadores de áudio de alta fidelidade:} Garantem mínima distorção e preservação do espectro sonoro.
 \end{itemize}
 
@@ -275,9 +275,9 @@ A elevada impedância de entrada torna o JFET ideal para circuitos onde a carga 
 
 \begin{itemize}
     \item \textbf{Osciloscópios e voltímetros de alta impedância:} Evitam carregamento do circuito sob teste.
-    
+
     \item \textbf{Buffers (source followers):} Isolam estágios sensíveis, mantendo a amplitude e forma do sinal.
-    
+
     \item \textbf{Amplificadores diferenciais de precisão:} Reduzem o erro devido a correntes de polarização.
 \end{itemize}
 
@@ -287,9 +287,9 @@ O JFET, em região de saturação, atua como uma fonte de corrente controlada po
 
 \begin{itemize}
     \item \textbf{Fontes de corrente constantes:} Usadas em circuitos de polarização de transistores bipolares ou MOSFETs, proporcionando estabilidade térmica.
-    
+
     \item \textbf{Circuitos de referência de corrente:} Mantêm corrente estável independentemente da tensão de alimentação.
-    
+
     \item \textbf{Cascodes e espelhos de corrente:} Melhoram a faixa de ganho e a linearidade.
 \end{itemize}
 
@@ -299,9 +299,9 @@ JFETs são excelentes para chaves analógicas devido à baixa resistência de ca
 
 \begin{itemize}
     \item \textbf{Multiplexadores analógicos:} Selecionam sinais sem degradar a amplitude ou forma de onda.
-    
+
     \item \textbf{Chaves de áudio de alta fidelidade:} Evitam distorção em equipamentos de som profissional.
-    
+
     \item \textbf{Amostragem de sinais:} Aplicações em conversores A/D e circuitos de medição.
 \end{itemize}
 
@@ -311,9 +311,9 @@ Apesar de não serem tão rápidos quanto MOSFETs de efeito de campo de óxido, 
 
 \begin{itemize}
     \item \textbf{Osciladores de RF:} Estabilidade de frequência e baixo ruído.
-    
+
     \item \textbf{Amplificadores de RF de baixo nível:} Como primeiros estágios em receptores de rádio e TV.
-    
+
     \item \textbf{Misturadores e moduladores:} Precisão em circuitos de comunicação analógica.
 \end{itemize}
 
@@ -323,9 +323,9 @@ O JFET é ideal em sensores devido à sua estabilidade e baixa corrente de fuga:
 
 \begin{itemize}
     \item \textbf{Sensores de capacitância ou piezoelétricos:} O JFET não descarrega o sinal detectado.
-    
+
     \item \textbf{Medidores de carga ou fotodiodos:} Minimiza corrente de polarização de entrada.
-    
+
     \item \textbf{Amplificadores de instrumentação médica:} Eletrocardiogramas (ECG) e eletroencefalogramas (EEG).
 \end{itemize}
 
@@ -344,25 +344,25 @@ O JFET é ideal em sensores devido à sua estabilidade e baixa corrente de fuga:
 A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, destacando aspectos de controle, impedância, ruído, estabilidade e faixa de frequência.
 
 \begin{itemize}
-    \item \textbf{Tipo de Controle:} 
+    \item \textbf{Tipo de Controle:}
     \begin{itemize}
         \item JFET: Controlado por tensão (\(V_{GS}\)), resultando em menor consumo de energia e mínima corrente de entrada.
         \item BJT: Controlado por corrente (\(I_B\)), exigindo corrente de base para operar.
     \end{itemize}
 
-    \item \textbf{Impedância de Entrada:} 
+    \item \textbf{Impedância de Entrada:}
     \begin{itemize}
         \item JFET: Impedância de entrada muito alta, da ordem de megaohms ou superior, evitando carregamento do circuito anterior.
         \item BJT: Impedância de entrada relativamente baixa, limitada pela base, o que pode afetar estágios sensíveis de sinal.
     \end{itemize}
 
-    \item \textbf{Ruído e Estabilidade:} 
+    \item \textbf{Ruído e Estabilidade:}
     \begin{itemize}
         \item JFET: Apresenta menor ruído de entrada e maior estabilidade térmica, ideal para instrumentação e aplicações de precisão.
         \item BJT: Maior ganho de corrente, mas sensível à variação térmica; preferido em estágios de potência e amplificação de sinais maiores.
     \end{itemize}
 
-    \item \textbf{Faixa de Frequência:} 
+    \item \textbf{Faixa de Frequência:}
     \begin{itemize}
         \item JFET: Pode operar em frequências elevadas, adequado para circuitos de RF de baixo nível.
         \item BJT: Mais eficiente em altas potências de RF, devido à maior mobilidade de portadores e capacidade de conduzir correntes mais elevadas.
@@ -424,7 +424,7 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
             A operação do MOSFET (assumindo NMOS) pode ser dividida em três regimes principais:
 
                 \begin{itemize}
-                    
+
                     \item \textbf{Região de corte:} quando $V_{GS}<V_{th}$. O canal não está formado e o transistor permanece desligado (apenas corrente de fuga).
 
                     \item \textbf{Região linear (triode):} quando $V_{GS}>V_{th}$ e $V_{DS}<V_{GS}-V_{th}$. Nesta região o canal está formado por toda a extensão entre dreno e fonte e o MOSFET se comporta aproximadamente como um resistor controlado por $V_{GS}$. Uma expressão aproximada da corrente de dreno é
@@ -439,7 +439,7 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                     \]
 
                         \begin{figure}[htpb!]
-                        
+
                             \centering
                             \includegraphics[width=0.6\textwidth]{./images/MOSFET_enhancement-mode_n-channel.svg.png}
                             \caption{Diagrama das regiões de operação do MOSFET.}
@@ -449,15 +449,15 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 \end{itemize}
 
             Em circuitos digitais, os MOSFETs são usadas preferencialmente as regiões de corte e região ôhmica. Em circuitos analógicos é usado o transístor em modo de saturação, o que costuma fazer confusão com o modo de saturação dos transístores bipolares de junção que são substancialmente diferentes. A saturação nos MOS é análoga a Zona Ativa Direta dos TBJ.
-                
+
         \subsection{Circuitos práticos}
 
             \begin{itemize}
 
                 \item \textbf{AMPLIFICADOR DE BANDA LARGA:} O circuito mostrado na figura \ref{fig:amplificador} pode amplificar sinais que vão desde a faixa de áudio até 10 MHz.
-                
+
                     \begin{figure}[htpb!]
-                        
+
                         \centering
                         \includegraphics[width=0.6\textwidth]{./images/Amplificador banda larga.jpg}
                         \caption{Circuito do amplificador de banda larga.}
@@ -475,9 +475,9 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 Observe que uma das comportas tem uma polarização fixa dada por R2 e R3 de modo a levar o componente a uma corrente de repouso ideal para a aplicação.
 
                 \item \textbf{SEGUIDOR DE FONTE}: Um seguidor de fonte é um amplificador que tem um ganho de tensão unitário, porém uma elevadíssima impedância de entrada e uma impedância muito baixa de saída. O circuito da figura \ref{fig:seguidor} mostra uma aplicação deste tipo que pode ser considerada equivalente ao seguidor de tensão normalmente feito com amplificadores operacionais.
-                
+
                     \begin{figure}[htpb!]
-                        
+
                         \centering
                         \includegraphics[width=0.6\textwidth]{./images/Seguidor de fonte.jpg}
                         \caption{Circuito do seguidor de fonte.}
@@ -490,9 +490,9 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 Dentre as aplicações recomendadas para este circuito podemos citar o casamento de impedância de fontes de sinais de áudio como, por exemplo, microfones.
 
                 \item \textbf{PROVADOR DE BOBINAS E CAPACITORES}: O circuito da figura \ref{fig:provador} é uma ponte que serve tanto para medida de capacitâncias como indutâncias e faz uso de um transistor de efeito de campo MOS de canal duplo alimentado por uma tensão de 9 V.
-            
+
                     \begin{figure}[htpb!]
-                        
+
                         \centering
                         \includegraphics[width=0.6\textwidth]{./images/Provador de bobinas e capacitores.jpg}
                         \caption{Circuito do provador de bobinas e capacitores.}
@@ -503,9 +503,9 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 O princípio de funcionamento é simples: aplica-se o sinal de um gerador de sinais na entrada, a frequência vai depender da ordem de grandeza da indutância ou da capacitância medida - normalmente ela estará entre 20 Hz e 20 kHz para medidas de capacitância entre 50 nF e 50 000 µF e indutâncias entre 5 mH e 6000 Hz com os valores de capacitância e indutância de referência usados.
 
                 \item \textbf{ELETROSCÓPIO}: O circuito mostrado na figura \ref{fig:Eletroscópio} é de um simples eletroscópio eletrônico que pode ser usado com vantagem nas aulas de física substituindo o tradicional eletroscópio de folhas de ouro.
-                
+
                     \begin{figure}[htpb!]
-                        
+
                         \centering
                         \includegraphics[width=0.6\textwidth]{./images/Eletroscópio.jpg}
                         \caption{Circuito do eletroscópio.}
@@ -521,7 +521,12 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
 
 \section{Transistor Bipolar de Porta Isolada(IGBT)}
 
-    O tipo de transistor IGBT, pode ser definido de maneira técnica como um transistor formado com 3 terminais formando uma espécie de chave eletrônica, tendo como principal objetivo combinar alta eficiência com comutação rápida. A sua semelhança com o tiristor pode causar certa confusão pois sua definição também inclui a chave tripla,porém a ação do tiristor é diferente no sentido de, permitir apenas a ação do transistor presente, na faixa de operação do tiristor.
+        O desenvolvimento do IGBT (do inglês, \textit{Insulated-Gate Bipolar Transistor}) foi motivado pela necessidade de um componente que unisse as melhores características de dois outros semicondutores: a alta impedância de entrada e a velocidade de comutação do MOSFET com a alta capacidade de corrente e baixa tensão de saturação do transistor bipolar (BJT).
+
+        Os conceitos iniciais surgiram no final dos anos 1970. O engenheiro \textbf{B. Jayant Baliga}, enquanto trabalhava na General Electric, desenvolveu e demonstrou experimentalmente o primeiro dispositivo IGBT prático em 1982. A General Electric comercializou o primeiro dispositivo no mesmo ano.
+
+        Um desafio crucial no início do desenvolvimento foi o fenômeno do \textit{"latch-up"} (travamento), uma condição onde a estrutura interna de tiristor do IGBT era ativada indevidamente, causando a perda de controle do dispositivo e sua eventual destruição. Esforços significativos foram feitos para suprimir essa trava. Em 1984, A. Nakagawa e sua equipe na Toshiba desenvolveram o conceito de design para IGBTs que não sofriam de \textit{latch-up}, o que permitiu a criação de componentes robustos e confiáveis. A Toshiba comercializou os primeiros produtos \textit{"non-latch-up"} em 1985, marcando o verdadeiro nascimento do IGBT moderno que conhecemos hoje \cite{wiki_igbt, onsemi_igbt}.
+
 
         \subsection{Tiristor}
 
@@ -533,14 +538,144 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
             \includegraphics[width=0.45\textwidth]{./images/tiristor.png}
         \caption{À esquerda: IGBT. À direita: Tiristor.}
         \end{figure}
+
+
         \subsection{Estrutura do IGBT}
 
-        A célula IGBT é construída semelhante ao MOSFET, porem a mudança está em que a parte n${^+}$ é substituida por uma camada coletora p${^+}$ desse modo forma um transistor PNP vertical, tal região coletora cria uma espécie de conexão do tipo Transistor Bipolar PNP com um MOSFET com a parte n${^+}$ na superfície, juntando assim o "melhor" dos dois dispositivos formando uma estrutura NPNP.
+        O Transistor Bipolar de Porta Isolada (IGBT) possui uma estrutura vertical complexa, projetada para otimizar o bloqueio de altas tensões quando desligado e a condução de altas correntes com baixas perdas quando ligado. A sua construção é fundamentalmente uma evolução da tecnologia do MOSFET de potência vertical.
 
-        \subsection{Modelagem matemática e física do IGBT}
-        \subsection{Design do componente}
-        \subsection{}
-        \subsection{}
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.6\linewidth]{images/The-structure-of-inverter-IGBT.png}
+            \caption{Estrutura de um IGBT de canal N.}
+            \label{fig:igbt_estrutura}
+        \end{figure}
+
+        \subsection{Construção Física}
+        A estrutura de um IGBT de canal N é composta por quatro camadas semicondutoras alternadas, formando uma estrutura P-N-P-N, como mostrado na Figura \ref{fig:igbt_estrutura}. As camadas principais são:
+
+        \begin{itemize}
+            \item \textbf{Substrato P+ (Coletor):} Localizado na parte inferior do componente, atua como o terminal do Coletor. Esta camada é fortemente dopada e é responsável por injetar portadores minoritários (lacunas) na região de deriva durante a condução, um processo chave para a baixa tensão de saturação do IGBT.
+            \item \textbf{Região de Deriva N- (Drift Region):} É uma camada espessa e levemente dopada. A sua espessura e dopagem determinam a capacidade de bloqueio de tensão do dispositivo. É nesta região que ocorre a \textbf{modulação de condutividade}, onde a injeção de lacunas pelo coletor aumenta drasticamente a condutividade, reduzindo a resistência e, consequentemente, a queda de tensão ($V_{CE(sat)}$).
+            \item \textbf{Corpo P (Body):} Esta camada é onde o canal de condução é formado. O acionamento do gate atrai elétrons para a superfície desta camada, criando uma "ponte" (canal N) que conecta a região do emissor à região de deriva.
+            \item \textbf{Regiões N+ (Emissor):} São regiões fortemente dopadas localizadas na superfície superior. O terminal de Emissor é metalizado em contato com estas regiões e com a região de corpo P.
+            \item \textbf{Gate Isolado:} Assim como em um MOSFET, o terminal de Gate é feito de polissilício e é eletricamente isolado do corpo do semicondutor por uma fina camada de dióxido de silício ($\text{SiO}_2$).
+        \end{itemize}
+
+        \subsection{Estrutura Parasitária e Latch-up} A sequência de camadas P-N-P-N cria um Tiristor (ou SCR) parasitário, composto por um transistor PNP (formado pelas camadas P+, N-, P) e um transistor NPN (formado pelas camadas N-, P, N+). Se este tiristor for ativado, ele cria um caminho de baixa impedância entre o coletor e o emissor que não pode ser desativado pelo gate, um fenômeno destrutivo chamado \textbf{latch-up}. Designs modernos de IGBTs minimizam a probabilidade de \textit{latch-up} através de geometrias cuidadosas e dopagem otimizada para reduzir o ganho dos transistores parasitas.
+
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.6\linewidth]{images/igbt-circuit-diagram.png}
+            \caption{Estrutura parasitária do tiristor em um IGBT.}
+            \label{fig:igbt_latchup}
+        \end{figure}
+
+        \subsection{Tipos de Estrutura de Gate}
+        Existem duas topologias principais para a estrutura do gate:
+        \begin{itemize}
+            \item \textbf{Gate Planar:} A estrutura mais antiga, onde o gate fica em uma superfície plana acima do corpo do componente.
+            \item \textbf{Gate de Trincheira (Trench Gate):} Em designs mais modernos, o gate é construído em uma trincheira vertical. Esta abordagem aumenta a densidade de células no chip, resultando em menor resistência de condução ($R_{DS(on)}$) e melhor desempenho geral.
+        \end{itemize}
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.6\linewidth]{images/planar_trench_gate.png}
+            \caption{Comparação entre estruturas de gate planar e de trincheira.\cite{phdthesis}}
+            \label{fig:igbt_gate_types}
+        \end{figure}
+
+        \subsection{Princípio de Funcionamento}
+        O IGBT é um componente semicondutor de quatro camadas (PNPN) que combina uma estrutura de entrada MOS (\textit{Metal-Oxide-Semiconductor}) para controle e uma estrutura de saída bipolar para comutação de alta potência. Em sua estrutura equivalente, pode-se visualizar o IGBT como um MOSFET de canal N controlando um transistor PNP em uma configuração pseudo-Darlington, onde o coletor do IGBT é o emissor do PNP, e o emissor do IGBT é o coletor do PNP, passando pelo MOSFET de controle. Esta configuração única permite que o IGBT combine as melhores características de ambos os tipos de dispositivos: a alta impedância de entrada e facilidade de controle do MOSFET com a alta capacidade de condução de corrente e baixa queda de tensão do transistor bipolar. O resultado é um dispositivo que pode operar com altas tensões e correntes, mantendo perdas de condução relativamente baixas, características essenciais para aplicações de eletrônica de potência.
+
+        \subsubsection{Acionamento} Para ligar o IGBT, uma tensão positiva é aplicada ao terminal de Gate (G) em relação ao Emissor (E), similar a um MOSFET. Essa tensão ($V_{GE}$) deve ser superior a uma tensão de limiar (\textit{threshold}), $V_{GE(th)}$. Ao ser aplicada, essa tensão cria um canal de condução (camada de inversão) na região P sob o gate, permitindo que elétrons fluam do emissor para a região de deriva N-. Essa injeção de elétrons na região N- causa uma injeção de lacunas da camada P+ (coletor), um fenômeno conhecido como \textbf{modulação de condutividade}. Essa modulação reduz drasticamente a resistência da região de deriva, permitindo que o IGBT conduza altas correntes com uma baixa queda de tensão ($V_{CE(sat)}$).
+
+        \subsubsection{Corte} Para desligar o IGBT, a tensão no gate é removida ou negativada ($V_{GE} = 0V$ ou negativa). Isso desfaz o canal de condução, interrompendo o fluxo de elétrons. A corrente não cessa instantaneamente; há um pequeno tempo de atraso (\textit{turn-off delay time}) e um tempo de queda (\textit{fall time}), onde as portadoras minoritárias (lacunas) remanescentes na região de deriva se recombinam. Este processo gera a chamada \textit{"corrente de cauda"} (\textit{tail current}), uma característica distintiva do desligamento do IGBT.
+
+        \subsection{Equações e Curvas Características}
+
+        Embora a modelagem completa seja complexa, a operação do IGBT pode ser entendida por suas curvas características:
+
+        \subsubsection{Curva de Transferência ($I_C$ vs $V_{GE}$)}
+        Similar à de um MOSFET de potência, esta curva mostra que a corrente de coletor ($I_C$) só começa a fluir quando a tensão gate-emissor ($V_{GE}$) ultrapassa a tensão de limiar $V_{GE(th)}$. A partir daí, $I_C$ aumenta com $V_{GE}$. A relação pode ser aproximada pela equação:
+
+        \[
+        I_C = g_m \cdot (V_{GE} - V_{GE(th)})
+        \]
+        Onde $g_m$ é a transcondutância do dispositivo.
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.6\linewidth]{images/curva_de_transferencia.png}
+            \caption{Curva de transferência típica de um IGBT.}
+            \label{fig:igbt_transfer}
+        \end{figure}
+
+
+        \subsubsection{\texorpdfstring{Curva de Saída ($I_C$ vs $V_{CE}$)}{Curva de Saída (IC vs VCE)}} Esta curva mostra a relação entre a corrente de coletor ($I_C$) e a tensão coletor-emissor ($V_{CE}$) para diferentes valores de $V_{GE}$.
+        \begin{itemize}
+            \item \textbf{Região de Corte:} Quando $V_{GE} < V_{GE(th)}$, o IGBT está desligado e apenas uma pequena corrente de fuga flui.
+            \item \textbf{Região Ativa:} Onde $I_C$ é controlada por $V_{GE}$, e o IGBT opera como um amplificador (uso incomum).
+            \item \textbf{Região de Saturação:} Quando o IGBT está totalmente ligado, $V_{CE}$ é muito baixa ($V_{CE(sat)}$) e o dispositivo se comporta como uma chave fechada. A $V_{CE(sat)}$ é a soma da queda de tensão em uma junção PN (diodo) e a queda de tensão no canal do MOSFET \cite{infineon_igbt_char}.
+            \[
+            V_{CE(sat)} \approx V_{J_{PN}} + V_{MOSFET}
+            \]
+        \end{itemize}
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.6\linewidth]{images/curva_de_saida.png}
+            \caption{Curva de saída típica de um IGBT.}
+            \label{fig:igbt_output}
+        \end{figure}
+
+        \subsubsection{Regiões de Operação}
+        O IGBT é projetado principalmente para operar como uma chave eletrônica, alternando entre dois estados principais:
+        \begin{enumerate}
+            \item \textbf{Modo de Corte (Forward Blocking Mode):} Ocorre quando $V_{GE} < V_{GE(th)}$. O dispositivo está desligado (chave aberta), bloqueando a passagem de corrente entre o coletor e o emissor, suportando altas tensões $V_{CE}$.
+            \item \textbf{Modo de Condução (Conduction Mode):} Ocorre quando $V_{GE} > V_{GE(th)}$. O dispositivo está ligado (chave fechada), permitindo a passagem de alta corrente $I_C$ com uma baixa queda de tensão $V_{CE(sat)}$.
+        \end{enumerate}
+        Não possui uma capacidade de bloqueio reverso significativa, sendo inerentemente um dispositivo unidirecional \cite{mps_igbt}.
+
+        \section*{Aplicações do IGBT}
+
+        O IGBT é um componente de alta potência, ideal para aplicações de chaveamento em frequências de alguns kHz até dezenas de kHz, graças a esse fatores, ele é amplamente utilizado em diversas aplicações industriais e comerciais. A seguir, são descritas algumas das principais aplicações do IGBT:
+
+        \begin{enumerate}
+            \item \textbf{Inversor de Frequência Monofásico (Meia Ponte ou Ponte Completa):}
+            \begin{itemize}
+                \item \textbf{Propósito:} Converter uma tensão DC em uma tensão AC de frequência e amplitude variáveis. É a base para o controle de velocidade de motores AC (VFD - \textit{Variable Frequency Drive}).
+                \item \textbf{Simulação:} Montar um circuito de meia ponte (\textit{half-bridge}) com dois IGBTs para gerar uma onda PWM. Utilizar uma carga indutiva-resistiva (RL) para simular um motor.
+                \item \textbf{O que observar:} As formas de onda de tensão e corrente na carga, a "corrente de cauda" durante o desligamento e as perdas de comutação.
+            \end{itemize}
+
+            \item \textbf{Conversor Buck (Step-Down) de Alta Potência:}
+            \begin{itemize}
+                \item \textbf{Propósito:} Reduzir um nível de tensão DC para um nível mais baixo de forma eficiente. Usado em fontes de alimentação chaveadas de alta potência (SMPS).
+                \item \textbf{Simulação:} Um circuito buck básico usa um IGBT como chave principal, um diodo rápido (\textit{freewheeling}), um indutor e um capacitor. O IGBT é acionado por um sinal PWM.
+                \item \textbf{O que observar:} A regulação da tensão de saída ao variar o ciclo de trabalho (\textit{duty cycle}) e a eficiência do conversor.
+            \end{itemize}
+
+            \begin{figure}[htpb!]
+                \centering
+                \includegraphics[width=0.5\textwidth]{./images/conversor_buck.png}
+                \caption{Circuito de conversor buck com IGBT.}
+            \end{figure}
+            \begin{figure}[htpb!]
+                \centering
+                \includegraphics[width=0.5\textwidth]{./images/Entrada_saida.png}
+                \caption{Exemplo de formas de onda de entrada e saída do conversor buck.}
+            \end{figure}
+
+
+            \item \textbf{Circuito de Controle de um Aquecedor por Indução:}
+            \begin{itemize}
+                \item \textbf{Propósito:} Gerar um campo magnético de alta frequência para aquecer objetos metálicos, como em fogões de indução.
+                \item \textbf{Simulação:} Modelar um circuito ressonante RLC. O IGBT é usado em uma configuração de inversor para alimentar este circuito na sua frequência natural.
+                \item \textbf{O que observar:} O chaveamento em tensão zero (ZVS) ou corrente zero (ZCS) para minimizar as perdas de comutação.
+            \end{itemize}
+        \end{enumerate}
 
 \section{Conclusões}
 
