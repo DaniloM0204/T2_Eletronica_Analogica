@@ -54,7 +54,7 @@
 
 \section{Introdução}
 
-    Dispositivos transistores são utilizados comumente como meios de amplificar, ou chavear um circuito, de forma que o mesmo opere da maneira desejada no circuito. Dentre os transistores existentes os tipos mais comuns são os bipolares de junção,cujo são componentes formados pela junção de semicondutores,de forma que os agregando em conjuntos do tipo NPN ou PNP, forma-se um dispositivo que opera conforme é configurada sua polarização, porém assim como há a existência de componentes específicos dentro do mundo dos capacitores e resistores, dentro do mundo dos transistores existem os transistores de efeito de campo, que utilizam outra forma de controlar o fluxo de corrente por semicondutores. Neste trabalho serão descritos diferentes transistores de efeito de campo(FET) como,FET de junção (JFET),FET de Metal-Óxido-Semicondutor(MOSFET) e por último o Transistor Bipolar de Porta Isolada(IGBT) determinando como funciona cada um desses componentes, assim como será feita a comparação entre os mesmos, e por fim a comparação direta com transistores bipolares de junção.
+    Dispositivos transistores são utilizados comumente como meios de amplificar, ou chavear um circuito, de forma que o mesmo opere da maneira desejada no circuito. Dentre os transistores existentes os tipos mais comuns são os bipolares de junção,cujo são componentes formados pela junção de semicondutores,de forma que os agregando em conjuntos do tipo NPN ou PNP, forma-se um dispositivo que opera conforme é configurada sua polarização, porém assim como há a existência de componentes específicos dentro do mundo dos capacitores e resistores, dentro do mundo dos transistores existem os transistores de efeito de campo, que utilizam outra forma de controlar o fluxo de corrente por semicondutores. Neste trabalho serão descritos diferentes transistores de efeito de campo(FET) como,FET de junção (JFET),FET de Metal-Óxido-Semicondutor(MOSFET) e por último o Transistor Bipolar de Porta Isolada(IGBT) determinando como funciona cada um desses componentes, assim como será feita a comparação entre os mesmos, e por fim a comparação direta com transistores bipolares de junção. \cite{eletronica_analogica2015_jfet_2025}
 
 \newpage
 
@@ -79,7 +79,7 @@ Somente a partir da década de 1950, com o avanço dos processos de dopagem e cr
 \subsection{Princípio de Funcionamento}
 
 
-O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e Drain (D). Seu funcionamento baseia-se no controle do fluxo de portadores de carga através de um canal semicondutor (de tipo N ou P), que é modulado pela tensão aplicada entre o gate e a fonte.
+O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e Drain (D). Seu funcionamento baseia-se no controle do fluxo de portadores de carga através de um canal semicondutor (de tipo N ou P), que é modulado pela tensão aplicada entre o gate e a fonte. \cite{blikai_jfet_2025}
 
 \begin{itemize}
     \item \textbf{Gate (G) — Porta:} É o terminal responsável pelo controle do fluxo de corrente no canal.
@@ -103,7 +103,7 @@ O JFET é um dispositivo semicondutor de três terminais: Gate (G), Source (S) e
 
 \subsubsection{Fluxo de Corrente no Canal}
 
-Quando uma tensão \(V_{DS}\) é aplicada entre o dreno e a fonte, uma corrente \(I_D\) começa a fluir através do canal, composta por elétrons (no JFET de canal N) ou lacunas (no JFET de canal P). A magnitude dessa corrente depende da largura efetiva do canal condutor.
+Quando uma tensão \(V_{DS}\) é aplicada entre o dreno e a fonte, uma corrente \(I_D\) começa a fluir através do canal, composta por elétrons (no JFET de canal N) ou lacunas (no JFET de canal P). A magnitude dessa corrente depende da largura efetiva do canal condutor. \cite{electronics_tutorials_jfet_2025}
 
 O gate é uma junção PN polarizada reversamente. Isso significa que praticamente não há corrente de gate, pois a barreira de potencial impede o fluxo de portadores. Entretanto, a região de depleção da junção se expande, reduzindo a seção transversal do canal e, consequentemente, controlando a corrente \(I_D\).
 
@@ -119,7 +119,7 @@ O gate é uma junção PN polarizada reversamente. Isso significa que praticamen
 
 O gate é constituído por uma junção PN polarizada reversamente em relação ao canal. Nessa condição, praticamente não há corrente fluindo pelo gate, pois a barreira de potencial da junção impede o movimento de portadores de carga. Apesar disso, a polarização reversa provoca o alargamento da região de depleção, que se estende lateralmente a partir das junções PN em direção ao interior do canal.
 
-À medida que a tensão $V_{GS}$ (tensão entre gate e source) se torna mais negativa no caso de um JFET de canal N, a região de depleção se expande, reduzindo a largura efetiva do canal condutor. Com a diminuição dessa seção transversal, a resistência do canal aumenta, resultando em uma diminuição da corrente $I_D$. Esse mecanismo de controle é o que caracteriza o funcionamento do JFET como um dispositivo de efeito de campo, o campo elétrico gerado pela tensão no gate modula a condutância do canal.
+À medida que a tensão $V_{GS}$ (tensão entre gate e source) se torna mais negativa no caso de um JFET de canal N, a região de depleção se expande, reduzindo a largura efetiva do canal condutor. Com a diminuição dessa seção transversal, a resistência do canal aumenta, resultando em uma diminuição da corrente $I_D$. Esse mecanismo de controle é o que caracteriza o funcionamento do JFET como um dispositivo de efeito de campo, o campo elétrico gerado pela tensão no gate modula a condutância do canal. \cite{electronics_tutorials_jfet_2025}
 
         \begin{figure}[htpb!]
             \centering
@@ -146,7 +146,7 @@ I_D = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2
 
 \subsubsection{Regiões de Operação}
 
-Para o transistor JFET pode-se distinguir três regiões principais de operação:
+Para o transistor JFET pode-se distinguir três regiões principais de operação: \cite{eletronica_analogica2015_jfet_2025}
 
 \begin{enumerate}
     \item \textbf{Região ôhmica (ou linear):}
@@ -173,13 +173,12 @@ Para o transistor JFET pode-se distinguir três regiões principais de operaçã
 
 \subsubsection{Estrutura Física}
 
-O JFET é construído a partir de um cristal semicondutor (geralmente silício) no qual se define um canal condutor de tipo N ou tipo P. O canal é cercado por regiões de dopagem oposta, que formam junções PN com o canal, conhecidas como regiões de gate. Como pode ser notado na  figura \ref{fig:JFET}.
+O JFET é construído a partir de um cristal semicondutor (geralmente silício) no qual se define um canal condutor de tipo N ou tipo P. O canal é cercado por regiões de dopagem oposta, que formam junções PN com o canal, conhecidas como regiões de gate. Como pode ser notado na  figura \ref{fig:JFET}. \cite{imd_ufrn_curso_transistores_2025}
 
 Características da estrutura física:
 
 \begin{itemize}
     \item \textbf{Canal semicondutor:} É levemente dopado para permitir controle eficaz da corrente, mantendo o valor de \(I_{DSS}\) dentro das especificações. O canal é formado longitudinalmente entre os terminais source e drain.
-
 
     \item \textbf{Junções Gate-Canal:} As regiões de dopagem do gate são fortemente dopadas para formar junções PN eficientes. A polarização reversa dessas junções controla a largura efetiva do canal.
 
