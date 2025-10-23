@@ -115,9 +115,6 @@ INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\main.aux
-INPUT .\main.aux
-INPUT main.aux
 OUTPUT main.aux
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -129,14 +126,8 @@ INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\main.out
-INPUT .\main.out
-INPUT main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT .\main.out
-INPUT .\main.out
 OUTPUT main.out
+OUTPUT main.pdf
 INPUT .\images\vertical_sigla_fundo_claro.png
 INPUT .\images\vertical_sigla_fundo_claro.png
 INPUT .\images\vertical_sigla_fundo_claro.png
@@ -159,9 +150,6 @@ INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cme
 INPUT C:\Users\danil\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\danil\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
 OUTPUT main.toc
 INPUT .\images\Captura de tela 2025-10-18 223003.png
 INPUT .\images\Captura de tela 2025-10-18 223003.png
@@ -314,6 +302,13 @@ INPUT .\images\curva_de_saida.png
 INPUT .\images\curva_de_saida.png
 INPUT .\images\curva_de_saida.png
 INPUT .\images\curva_de_saida.png
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
+INPUT .\images\inversorigbt.jpg
 INPUT .\images\conversor_buck.png
 INPUT .\images\conversor_buck.png
 INPUT .\images\conversor_buck.png
@@ -328,6 +323,13 @@ INPUT .\images\Entrada_saida.png
 INPUT .\images\Entrada_saida.png
 INPUT .\images\Entrada_saida.png
 INPUT .\images\Entrada_saida.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
+INPUT .\images\aquecedor_inducao.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

@@ -523,7 +523,7 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
 
         O desenvolvimento do IGBT (do inglês, \textit{Insulated-Gate Bipolar Transistor}) foi motivado pela necessidade de um componente que unisse as melhores características de dois outros semicondutores: a alta impedância de entrada e a velocidade de comutação do MOSFET com a alta capacidade de corrente e baixa tensão de saturação do transistor bipolar (BJT).
 
-        Os conceitos iniciais surgiram no final dos anos 1970. O engenheiro \textbf{B. Jayant Baliga}, enquanto trabalhava na General Electric, desenvolveu e demonstrou experimentalmente o primeiro dispositivo IGBT prático em 1982. A General Electric comercializou o primeiro dispositivo no mesmo ano.
+        Os conceitos iniciais surgiram no final dos anos 1970 em que o engenheiro {B. Jayant Baliga}, enquanto trabalhava na General Electric, desenvolveu e demonstrou experimentalmente o primeiro dispositivo IGBT prático em 1982 a partir da sua criação, a General Electric comercializou o primeiro dispositivo no mesmo ano.
 
         Um desafio crucial no início do desenvolvimento foi o fenômeno do \textit{"latch-up"} (travamento), uma condição onde a estrutura interna de tiristor do IGBT era ativada indevidamente, causando a perda de controle do dispositivo e sua eventual destruição. Esforços significativos foram feitos para suprimir essa trava. Em 1984, A. Nakagawa e sua equipe na Toshiba desenvolveram o conceito de design para IGBTs que não sofriam de \textit{latch-up}, o que permitiu a criação de componentes robustos e confiáveis. A Toshiba comercializou os primeiros produtos \textit{"non-latch-up"} em 1985, marcando o verdadeiro nascimento do IGBT moderno que conhecemos hoje \cite{wiki_igbt, onsemi_igbt}.
 
@@ -650,6 +650,12 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 \item \textbf{O que observar:} As formas de onda de tensão e corrente na carga, a "corrente de cauda" durante o desligamento e as perdas de comutação.
             \end{itemize}
 
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.5\textwidth]{./images/inversorigbt.jpg}
+                \caption{Circuito de inversor de meia ponte com IGBTs.}
+            \end{figure}
+
             \item \textbf{Conversor Buck (Step-Down) de Alta Potência:}
             \begin{itemize}
                 \item \textbf{Propósito:} Reduzir um nível de tensão DC para um nível mais baixo de forma eficiente. Usado em fontes de alimentação chaveadas de alta potência (SMPS).
@@ -676,6 +682,13 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
                 \item \textbf{O que observar:} O chaveamento em tensão zero (ZVS) ou corrente zero (ZCS) para minimizar as perdas de comutação.
             \end{itemize}
         \end{enumerate}
+
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.35\textwidth]{./images/aquecedor_inducao.png}
+            \caption{Circuito de aquecedor por indução com IGBT.}
+        \end{figure}
 
 \section{Conclusões}
     Este trabalho sintetiza as características fundamentais e as aplicações práticas dos três principais tipos de transistores de efeito de campo analisados: JFET, MOSFET e IGBT. A análise comparativa mostrou que cada tecnologia tem vantagens específicas que a tornam mais adequada a determinadas funções: o JFET destaca-se pela alta impedância de entrada e baixo ruído, sendo ideal para estágios de entrada de instrumentação e amplificadores de baixa potência; o MOSFET oferece alta impedância, comutação rápida e excelente desempenho em aplicações tanto digitais quanto analógicas de média potência; já o IGBT combina a facilidade de acionamento do MOSFET com a capacidade de conduzir altas correntes e suportar elevadas tensões, sendo a escolha natural para aplicações de potência (conversores, inversores e acionamento de motores).
