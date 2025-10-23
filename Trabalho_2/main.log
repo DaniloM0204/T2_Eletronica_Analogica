@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.10)  23 OCT 2025 20:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.10)  23 OCT 2025 20:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -376,75 +376,95 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.53 \newpage
-              [1] [2]
+              [1]
+
+Package natbib Warning: Citation `eletronica_analogica2015_jfet_2025' on page 2 undefined on input line 57.
+
+[2]
 <images/Captura de tela 2025-10-18 223003.png, id=22, 293.59688pt x 288.3272pt>
 File: images/Captura de tela 2025-10-18 223003.png Graphic file (type png)
 <use images/Captura de tela 2025-10-18 223003.png>
 Package pdftex.def Info: images/Captura de tela 2025-10-18 223003.png  used on input line 68.
 (pdftex.def)             Requested size: 136.57462pt x 134.12354pt.
- [3 <./images/Captura de tela 2025-10-18 223003.png>]
+
+
+Package natbib Warning: Citation `blikai_jfet_2025' on page 3 undefined on input line 82.
+
+[3 <./images/Captura de tela 2025-10-18 223003.png>]
 <images/pn.png, id=35, 469.00218pt x 330.48468pt>
 File: images/pn.png Graphic file (type png)
 <use images/pn.png>
 Package pdftex.def Info: images/pn.png  used on input line 100.
 (pdftex.def)             Requested size: 364.19667pt x 256.6323pt.
+
+
+Package natbib Warning: Citation `electronics_tutorials_jfet_2025' on page 4 undefined on input line 106.
+
 <images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png, id=36, 365.86688pt x 347.04657pt>
 File: images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png Graphic file (type png)
 <use images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png>
 Package pdftex.def Info: images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png  used on input line 113.
 (pdftex.def)             Requested size: 227.62206pt x 215.9133pt.
- [4 <./images/pn.png>]
+[4 <./images/pn.png>]
+
+Package natbib Warning: Citation `electronics_tutorials_jfet_2025' on page 5 undefined on input line 122.
+
 <images/aumento Vds.png, id=46, 632.3625pt x 285.065pt>
 File: images/aumento Vds.png Graphic file (type png)
 <use images/aumento Vds.png>
 Package pdftex.def Info: images/aumento Vds.png  used on input line 126.
 (pdftex.def)             Requested size: 364.19667pt x 164.18079pt.
- [5 <./images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png> <./images/aumento Vds.png>]
+[5 <./images/JFET-de-canal-n-reversamente-polarizado-corpo-com-cargas-negativas-nas-proximidades-da.png> <./images/aumento Vds.png>]
+
+Package natbib Warning: Citation `eletronica_analogica2015_jfet_2025' on page 6 undefined on input line 149.
+
 <images/regioes.png, id=54, 642.4pt x 191.71625pt>
 File: images/regioes.png Graphic file (type png)
 <use images/regioes.png>
 Package pdftex.def Info: images/regioes.png  used on input line 167.
 (pdftex.def)             Requested size: 455.24411pt x 135.86497pt.
 
-
 LaTeX Warning: Reference `fig:JFET' on page 6 undefined on input line 176.
+
+
+Package natbib Warning: Citation `imd_ufrn_curso_transistores_2025' on page 6 undefined on input line 176.
 
 [6 <./images/regioes.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 209.
+(hyperref)                removing `math shift' on input line 208.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 223.
+(hyperref)                removing `math shift' on input line 222.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Overfull \hbox (4.15482pt too wide) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+
+Overfull \hbox (4.15482pt too wide) in paragraph at lines 241--242
 []\OT1/cmr/bx/n/12 Ru^^S^^Pdo t^^Sermico: \OT1/cmr/m/n/12 Ca-nais fi-nos ge-ram me-nos cor-rente de ru^^S^^Pdo, es-sen-cial em aplica^^Xc~oes
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
+(hyperref)                removing `math shift' on input line 244.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
@@ -452,164 +472,164 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 <./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg, id=100, 803.0pt x 1071.00125pt>
 File: ./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg Graphic file (type jpg)
 <use ./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg>
-Package pdftex.def Info: ./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg  used on input line 377.
+Package pdftex.def Info: ./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg  used on input line 376.
 (pdftex.def)             Requested size: 91.04742pt x 121.4221pt.
 
 
-Package natbib Warning: Citation `wikipedia_mosfet_2025' on page 11 undefined on input line 383.
+Package natbib Warning: Citation `wikipedia_mosfet_2025' on page 11 undefined on input line 382.
 
 
-LaTeX Warning: Reference `fig:comparacao' on page 11 undefined on input line 385.
+LaTeX Warning: Reference `fig:comparacao' on page 11 undefined on input line 384.
 
 [11 <./images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg>]
 <./images/transisCampo.jpg, id=108, 183.084pt x 120.9318pt>
 File: ./images/transisCampo.jpg Graphic file (type jpg)
 <use ./images/transisCampo.jpg>
-Package pdftex.def Info: ./images/transisCampo.jpg  used on input line 390.
+Package pdftex.def Info: ./images/transisCampo.jpg  used on input line 389.
 (pdftex.def)             Requested size: 182.09486pt x 120.28195pt.
 <./images/Mosfet-wp.svg.png, id=109, 803.0pt x 918.43124pt>
 File: ./images/Mosfet-wp.svg.png Graphic file (type png)
 <use ./images/Mosfet-wp.svg.png>
-Package pdftex.def Info: ./images/Mosfet-wp.svg.png  used on input line 399.
+Package pdftex.def Info: ./images/Mosfet-wp.svg.png  used on input line 398.
 (pdftex.def)             Requested size: 91.04742pt x 104.12486pt.
 <./images/FET_cross_section.png, id=110, 451.6875pt x 390.45876pt>
 File: ./images/FET_cross_section.png Graphic file (type png)
 <use ./images/FET_cross_section.png>
-Package pdftex.def Info: ./images/FET_cross_section.png  used on input line 409.
+Package pdftex.def Info: ./images/FET_cross_section.png  used on input line 408.
 (pdftex.def)             Requested size: 136.57462pt x 118.062pt.
  [12 <./images/transisCampo.jpg> <./images/Mosfet-wp.svg.png> <./images/FET_cross_section.png>]
 <./images/MOSFET_enhancement-mode_n-channel.svg.png, id=120, 521.95pt x 228.855pt>
 File: ./images/MOSFET_enhancement-mode_n-channel.svg.png Graphic file (type png)
 <use ./images/MOSFET_enhancement-mode_n-channel.svg.png>
-Package pdftex.def Info: ./images/MOSFET_enhancement-mode_n-channel.svg.png  used on input line 444.
+Package pdftex.def Info: ./images/MOSFET_enhancement-mode_n-channel.svg.png  used on input line 443.
 (pdftex.def)             Requested size: 273.14923pt x 119.76654pt.
  [13]
 
-LaTeX Warning: Reference `fig:amplificador' on page 14 undefined on input line 457.
+LaTeX Warning: Reference `fig:amplificador' on page 14 undefined on input line 456.
 
 
-Package natbib Warning: Citation `newtoncbraga_mosfet_2025' on page 14 undefined on input line 457.
+Package natbib Warning: Citation `newtoncbraga_mosfet_2025' on page 14 undefined on input line 456.
 
 <./images/Amplificador banda larga.jpg, id=127, 521.95pt x 313.17pt>
 File: ./images/Amplificador banda larga.jpg Graphic file (type jpg)
 <use ./images/Amplificador banda larga.jpg>
-Package pdftex.def Info: ./images/Amplificador banda larga.jpg  used on input line 462.
+Package pdftex.def Info: ./images/Amplificador banda larga.jpg  used on input line 461.
 (pdftex.def)             Requested size: 273.14923pt x 163.89105pt.
 
-LaTeX Warning: Reference `fig:seguidor' on page 14 undefined on input line 477.
+LaTeX Warning: Reference `fig:seguidor' on page 14 undefined on input line 476.
 
 [14 <./images/MOSFET_enhancement-mode_n-channel.svg.png> <./images/Amplificador banda larga.jpg>]
 <./images/Seguidor de fonte.jpg, id=136, 521.95pt x 221.82875pt>
 File: ./images/Seguidor de fonte.jpg Graphic file (type jpg)
 <use ./images/Seguidor de fonte.jpg>
-Package pdftex.def Info: ./images/Seguidor de fonte.jpg  used on input line 482.
+Package pdftex.def Info: ./images/Seguidor de fonte.jpg  used on input line 481.
 (pdftex.def)             Requested size: 273.14923pt x 116.0895pt.
 
 
-LaTeX Warning: Reference `fig:provador' on page 15 undefined on input line 492.
+LaTeX Warning: Reference `fig:provador' on page 15 undefined on input line 491.
 
 <./images/Provador de bobinas e capacitores.jpg, id=137, 521.95pt x 270.00874pt>
 File: ./images/Provador de bobinas e capacitores.jpg Graphic file (type jpg)
 <use ./images/Provador de bobinas e capacitores.jpg>
-Package pdftex.def Info: ./images/Provador de bobinas e capacitores.jpg  used on input line 497.
+Package pdftex.def Info: ./images/Provador de bobinas e capacitores.jpg  used on input line 496.
 (pdftex.def)             Requested size: 273.14923pt x 141.3035pt.
 
-LaTeX Warning: Reference `fig:Eletroscópio' on page 15 undefined on input line 505.
+LaTeX Warning: Reference `fig:Eletroscópio' on page 15 undefined on input line 504.
 
 <./images/Eletroscópio.jpg, id=138, 521.95pt x 258.9675pt>
 File: ./images/Eletroscópio.jpg Graphic file (type jpg)
 <use ./images/Eletroscópio.jpg>
-Package pdftex.def Info: ./images/Eletroscópio.jpg  used on input line 510.
+Package pdftex.def Info: ./images/Eletroscópio.jpg  used on input line 509.
 (pdftex.def)             Requested size: 273.14923pt x 135.52528pt.
 [15 <./images/Seguidor de fonte.jpg> <./images/Provador de bobinas e capacitores.jpg>]
 
-Package natbib Warning: Citation `wiki_igbt' on page 16 undefined on input line 528.
+Package natbib Warning: Citation `wiki_igbt' on page 16 undefined on input line 527.
 
 
-Package natbib Warning: Citation `onsemi_igbt' on page 16 undefined on input line 528.
+Package natbib Warning: Citation `onsemi_igbt' on page 16 undefined on input line 527.
 
 <./images/IGBT.png, id=145, 580.1675pt x 314.17375pt>
 File: ./images/IGBT.png Graphic file (type png)
 <use ./images/IGBT.png>
-Package pdftex.def Info: ./images/IGBT.png  used on input line 537.
+Package pdftex.def Info: ./images/IGBT.png  used on input line 536.
 (pdftex.def)             Requested size: 204.85846pt x 110.93561pt.
 <./images/tiristor.png, id=146, 429.605pt x 192.72pt>
 File: ./images/tiristor.png Graphic file (type png)
 <use ./images/tiristor.png>
-Package pdftex.def Info: ./images/tiristor.png  used on input line 538.
+Package pdftex.def Info: ./images/tiristor.png  used on input line 537.
 (pdftex.def)             Requested size: 204.85846pt x 91.89876pt.
 [16 <./images/Eletroscópio.jpg>]
 <images/The-structure-of-inverter-IGBT.png, id=154, 1003.75pt x 752.8125pt>
 File: images/The-structure-of-inverter-IGBT.png Graphic file (type png)
 <use images/The-structure-of-inverter-IGBT.png>
-Package pdftex.def Info: images/The-structure-of-inverter-IGBT.png  used on input line 549.
+Package pdftex.def Info: images/The-structure-of-inverter-IGBT.png  used on input line 548.
 (pdftex.def)             Requested size: 273.14923pt x 204.85878pt.
 
 
-LaTeX Warning: Reference `fig:igbt_estrutura' on page 17 undefined on input line 555.
+LaTeX Warning: Reference `fig:igbt_estrutura' on page 17 undefined on input line 554.
 
 [17 <./images/IGBT.png (PNG copy)> <./images/tiristor.png (PNG copy)> <./images/The-structure-of-inverter-IGBT.png>]
 <images/igbt-circuit-diagram.png, id=164, 247.92625pt x 204.765pt>
 File: images/igbt-circuit-diagram.png Graphic file (type png)
 <use images/igbt-circuit-diagram.png>
-Package pdftex.def Info: images/igbt-circuit-diagram.png  used on input line 570.
+Package pdftex.def Info: images/igbt-circuit-diagram.png  used on input line 569.
 (pdftex.def)             Requested size: 273.14923pt x 225.61398pt.
  [18 <./images/igbt-circuit-diagram.png>]
 <images/planar_trench_gate.png, id=174, 390.45876pt x 285.065pt>
 File: images/planar_trench_gate.png Graphic file (type png)
 <use images/planar_trench_gate.png>
-Package pdftex.def Info: images/planar_trench_gate.png  used on input line 584.
+Package pdftex.def Info: images/planar_trench_gate.png  used on input line 583.
 (pdftex.def)             Requested size: 273.14923pt x 199.4267pt.
 
 
-Package natbib Warning: Citation `phdthesis' on page 19 undefined on input line 585.
+Package natbib Warning: Citation `phdthesis' on page 19 undefined on input line 584.
 
 [19 <./images/planar_trench_gate.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 599.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 600.
+(hyperref)                removing `subscript' on input line 599.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 599.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 599.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 600.
+(hyperref)                removing `subscript' on input line 599.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 599.
 
 <images/curva_de_transferencia.png, id=183, 501.875pt x 150.5625pt>
 File: images/curva_de_transferencia.png Graphic file (type png)
 <use images/curva_de_transferencia.png>
-Package pdftex.def Info: images/curva_de_transferencia.png  used on input line 610.
+Package pdftex.def Info: images/curva_de_transferencia.png  used on input line 609.
 (pdftex.def)             Requested size: 273.14923pt x 81.94809pt.
 
-Package natbib Warning: Citation `infineon_igbt_char' on page 20 undefined on input line 620.
+Package natbib Warning: Citation `infineon_igbt_char' on page 20 undefined on input line 619.
 
 <images/curva_de_saida.png, id=184, 717.68124pt x 416.55624pt>
 File: images/curva_de_saida.png Graphic file (type png)
 <use images/curva_de_saida.png>
-Package pdftex.def Info: images/curva_de_saida.png  used on input line 628.
+Package pdftex.def Info: images/curva_de_saida.png  used on input line 627.
 (pdftex.def)             Requested size: 273.14923pt x 158.5409pt.
 [20 <./images/curva_de_transferencia.png>]
 
-Package natbib Warning: Citation `mps_igbt' on page 21 undefined on input line 639.
+Package natbib Warning: Citation `mps_igbt' on page 21 undefined on input line 638.
 
 <./images/inversorigbt.jpg, id=196, 443.40656pt x 155.83218pt>
 File: ./images/inversorigbt.jpg Graphic file (type jpg)
 <use ./images/inversorigbt.jpg>
-Package pdftex.def Info: ./images/inversorigbt.jpg  used on input line 655.
+Package pdftex.def Info: ./images/inversorigbt.jpg  used on input line 654.
 (pdftex.def)             Requested size: 227.62206pt x 79.99886pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -618,57 +638,57 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images/conversor_buck.png, id=208, 401.70074pt x 183.68625pt>
 File: ./images/conversor_buck.png Graphic file (type png)
 <use ./images/conversor_buck.png>
-Package pdftex.def Info: ./images/conversor_buck.png  used on input line 668.
+Package pdftex.def Info: ./images/conversor_buck.png  used on input line 667.
 (pdftex.def)             Requested size: 227.62206pt x 104.0856pt.
 <./images/Entrada_saida.png, id=209, 492.03825pt x 332.442pt>
 File: ./images/Entrada_saida.png Graphic file (type png)
 <use ./images/Entrada_saida.png>
-Package pdftex.def Info: ./images/Entrada_saida.png  used on input line 673.
+Package pdftex.def Info: ./images/Entrada_saida.png  used on input line 672.
 (pdftex.def)             Requested size: 227.62206pt x 153.79259pt.
  [22 <./images/inversorigbt.jpg> <./images/conversor_buck.png> <./images/Entrada_saida.png>]
 
 pdfTeX warning: pdflatex: arithmetic: number too big
-c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:689: Dimension too large.
+c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:688: Dimension too large.
 <argument> \ht \@tempboxa 
                           
-l.689 ...extwidth]{./images/aquecedor_inducao.png}
+l.688 ...extwidth]{./images/aquecedor_inducao.png}
                                                   
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 <./images/aquecedor_inducao.png, id=221, --32768.0pt x 28474.38pt>
-c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:689: Dimension too large.
+c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:688: Dimension too large.
 <recently read> \Gin@nat@height 
                                 
-l.689 ...extwidth]{./images/aquecedor_inducao.png}
+l.688 ...extwidth]{./images/aquecedor_inducao.png}
                                                   
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 File: ./images/aquecedor_inducao.png Graphic file (type png)
 <use ./images/aquecedor_inducao.png>
-Package pdftex.def Info: ./images/aquecedor_inducao.png  used on input line 689.
+Package pdftex.def Info: ./images/aquecedor_inducao.png  used on input line 688.
 (pdftex.def)             Requested size: 159.33821pt x -16383.99998pt.
-c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:689: Dimension too large.
+c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:688: Dimension too large.
 \Gscale@box ...tw@ -#2\dp \z@ \dp \tw@ -#2\ht \z@ 
                                                   \else \ht \tw@ #2\ht \z@ \...
-l.689 ...extwidth]{./images/aquecedor_inducao.png}
+l.688 ...extwidth]{./images/aquecedor_inducao.png}
                                                   
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
-c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:689: Dimension too large.
+c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:688: Dimension too large.
 \Gscale@box ...fdim #1\p@ <\z@ \hb@xt@ -#1\wd \z@ 
                                                   {\kern -#1\wd \z@ \box \tw...
-l.689 ...extwidth]{./images/aquecedor_inducao.png}
+l.688 ...extwidth]{./images/aquecedor_inducao.png}
                                                   
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
-c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:689: Dimension too large.
+c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex:688: Dimension too large.
 \Gscale@box ...b@xt@ -#1\wd \z@ {\kern -#1\wd \z@ 
                                                   \box \tw@ \hss }\else \hb@...
-l.689 ...extwidth]{./images/aquecedor_inducao.png}
+l.688 ...extwidth]{./images/aquecedor_inducao.png}
                                                   
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -720,9 +740,9 @@ Here is how much of TeX's memory you used:
  33467 multiletter control sequences out of 15000+600000
  563850 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,1280b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1340b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\danil\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/danil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (25 pages, 1428060 bytes).
+Output written on main.pdf (25 pages, 1428233 bytes).
 PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  110 named destinations out of 1000 (max. 500000)
