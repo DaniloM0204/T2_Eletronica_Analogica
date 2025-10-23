@@ -381,6 +381,7 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
         \end{figure}
 
     O transistor MOSFET (acrônimo de Metal Oxide Semiconductor Field Effect Transistor, ou transistor de efeito de campo semicondutor de óxido metálico — TECMOS), é o tipo mais comum de transístores de efeito de campo em circuitos tanto digitais quanto analógicos. Seu princípio básico foi proposto pela primeira vez por Julius Edgar Lilienfeld, em 1925.
+\cite{wikipedia_mosfet_2025}
 
     Os transistores de efeito de campo diferentemente dos transistores bipolares comuns são típicos amplificadores de tensão e não de corrente. Enquanto a corrente de coletor de um transistor comum é função da corrente de base, num transistor de efeito de campo, a corrente de dreno é função da tensão de comporta, conforme indica a figura \ref{fig:comparacao}.
 
@@ -454,7 +455,7 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
 
             \begin{itemize}
 
-                \item \textbf{AMPLIFICADOR DE BANDA LARGA:} O circuito mostrado na figura \ref{fig:amplificador} pode amplificar sinais que vão desde a faixa de áudio até 10 MHz.
+                \item \textbf{AMPLIFICADOR DE BANDA LARGA:} O circuito mostrado na figura \ref{fig:amplificador} pode amplificar sinais que vão desde a faixa de áudio até 10 MHz\cite{newtoncbraga_mosfet_2025}.
 
                     \begin{figure}[htpb!]
 
@@ -678,10 +679,11 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
         \end{enumerate}
 
 \section{Conclusões}
+    Este trabalho sintetiza as características fundamentais e as aplicações práticas dos três principais tipos de transistores de efeito de campo analisados: JFET, MOSFET e IGBT. A análise comparativa mostrou que cada tecnologia tem vantagens específicas que a tornam mais adequada a determinadas funções: o JFET destaca-se pela alta impedância de entrada e baixo ruído, sendo ideal para estágios de entrada de instrumentação e amplificadores de baixa potência; o MOSFET oferece alta impedância, comutação rápida e excelente desempenho em aplicações tanto digitais quanto analógicas de média potência; já o IGBT combina a facilidade de acionamento do MOSFET com a capacidade de conduzir altas correntes e suportar elevadas tensões, sendo a escolha natural para aplicações de potência (conversores, inversores e acionamento de motores).
 
-    Com este trabalho foi possível compreender de forma mais clara os tipos e funcionalidades dos resistores e capacitores em diferentes circuitos eletrônicos, abordando desde materiais de fabricação dos componentes a casos especiais de aplicações específicas. Com isso evidenciando que a escolha do tipo adequado de componente é parte fundamental na construção de qualquer tipo de circuito, dependendo diretamente das condições de operação do circuito, sendo necessário considerar a tolerância, dissipação de potência, tensão de trabalho, resistência interna do capacitor e estabilidade térmica necessária para cada caso.
+    Além das diferenças elétricas, discutimos aspectos de projeto relevantes — como geometria do canal, dopagem, estrutura de gate e efeitos parasitários (por exemplo, o tiristor parasitário no IGBT que pode causar latch-up) — que influenciam diretamente parâmetros práticos: eficiência de condução, perdas de comutação, linearidade e comportamento térmico. Essas considerações reforçam que a seleção entre JFET, MOSFET e IGBT não é apenas uma questão de preferência, mas de adequação técnica ao requisito de circuito: sensibilidade ao ruído, faixa de frequência, dissipação de potência, e exigências de comutação.
 
-    Dessa forma, vemos que os resistores e capacitores não devem ser vistos apenas como elementos básicos em um esquema eletrônico, mas como peças-chave que definem o desempenho, a segurança e a confiabilidade de um projeto. Sua seleção adequada exige não apenas conhecimento técnico, mas também compreensão prática das condições reais de operação.
+    Em termos práticos, a conclusão principal é que entender as limitações físicas e os trade-offs de cada dispositivo permite projetar circuitos mais eficientes e confiáveis. Projetos de baixa potência e alta fidelidade favorecerão dispositivos de alta impedância e baixo ruído (como JFETs e MOSFETs de pequena sinal), enquanto aplicações de potência exigir ão MOSFETs de potência ou IGBTs com topologias e técnicas de acionamento apropriadas para minimizar perdas e evitar fenômenos indesejáveis (como corrente de cauda e latch-up). Finalmente, a integração adequada de aspectos de projeto, simulação e testes experimentais é essencial para garantir desempenho e segurança em aplicações reais.
 
 \newpage
 
