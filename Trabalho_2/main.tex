@@ -637,63 +637,50 @@ A seguir, são apresentadas as principais diferenças entre o JFET e o BJT, dest
         \end{enumerate}
         Não possui uma capacidade de bloqueio reverso significativa, sendo inerentemente um dispositivo unidirecional \cite{mps_igbt}.
 
-        \section*{Aplicações do IGBT}
+        \section*{Aplicações do IGBT em Circuitos Práticos}
 
-        O IGBT é um componente de alta potência, ideal para aplicações de chaveamento em frequências de alguns kHz até dezenas de kHz, graças a esse fatores, ele é amplamente utilizado em diversas aplicações industriais e comerciais. A seguir, são descritas algumas das principais aplicações do IGBT:
+        O IGBT é um componente de alta potência, ideal para aplicações de chaveamento em frequências variando até dezenas de kHz, graças a esse fatores, ele é amplamente utilizado em diversas aplicações industriais e comerciais. A seguir, são descritas algumas das principais aplicações do IGBT:
 
-        \begin{enumerate}
-            \item \textbf{Inversor de Frequência Monofásico (Meia Ponte ou Ponte Completa):}
-            \begin{itemize}
-                \item \textbf{Propósito:} Converter uma tensão DC em uma tensão AC de frequência e amplitude variáveis. É a base para o controle de velocidade de motores AC (VFD - \textit{Variable Frequency Drive}).
-                \item \textbf{Simulação:} Montar um circuito de meia ponte (\textit{half-bridge}) com dois IGBTs para gerar uma onda PWM. Utilizar uma carga indutiva-resistiva (RL) para simular um motor.
-                \item \textbf{O que observar:} As formas de onda de tensão e corrente na carga, a "corrente de cauda" durante o desligamento e as perdas de comutação.
-            \end{itemize}
+            \subsection{Inversor de Frequência Monofásico (Meia Ponte ou Ponte Completa)}
+                \textbf{Funcionamento:} O inversor utiliza dois IGBTs (Q1 e Q2) em uma configuração de meia ponte. Os IGBTs são chaveados alternadamente por um sinal PWM (Pulse Width Modulation) gerado por um controlador. Quando Q1 está ligado e Q2 desligado, a tensão de saída é positiva. Quando Q2 está ligado e Q1 desligado, a tensão de saída é negativa. A frequência e o ciclo de trabalho do PWM determinam a frequência e a amplitude da tensão AC de saída.
 
-            \begin{figure}[!h]
-                \centering
-                \includegraphics[width=0.5\textwidth]{./images/inversorigbt.jpg}
-                \caption{Circuito de inversor de meia ponte com IGBTs.}
-            \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.7\textwidth]{./images/inversorigbt.jpg}
+                    \caption{Circuito de inversor de meia ponte com IGBTs.}
+                \end{figure}
 
-            \item \textbf{Conversor Buck (Step-Down) de Alta Potência:}
-            \begin{itemize}
-                \item \textbf{Propósito:} Reduzir um nível de tensão DC para um nível mais baixo de forma eficiente. Usado em fontes de alimentação chaveadas de alta potência (SMPS).
-                \item \textbf{Simulação:} Um circuito buck básico usa um IGBT como chave principal, um diodo rápido (\textit{freewheeling}), um indutor e um capacitor. O IGBT é acionado por um sinal PWM.
-                \item \textbf{O que observar:} A regulação da tensão de saída ao variar o ciclo de trabalho (\textit{duty cycle}) e a eficiência do conversor.
-            \end{itemize}
+            \subsection{Conversor Buck (Step-Down) de Alta Potência}
+                \textbf{Funcionamento:} O IGBT é chaveado por um sinal PWM(Pulso). Quando está ligado, a corrente flui da fonte de entrada ($V_{in}$) através do indutor (L) e do IGBT para a carga. A energia é armazenada no indutor. Quando IGBT é desligado, o diodo presente entra em condução, permitindo que a energia armazenada no indutor seja entregue à carga, mantendo a corrente. O capacitor (C1) filtra a tensão de saída, resultando em uma tensão DC mais suave e de menor valor.
 
-            \begin{figure}[htpb!]
-                \centering
-                \includegraphics[width=0.5\textwidth]{./images/conversor_buck.png}
-                \caption{Circuito de conversor buck com IGBT.}
-            \end{figure}
-            \begin{figure}[htpb!]
-                \centering
-                \includegraphics[width=0.5\textwidth]{./images/Entrada_saida.png}
-                \caption{Exemplo de formas de onda de entrada e saída do conversor buck.}
-            \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.5\textwidth]{./images/conversor_buck.png}
+                    \caption{Circuito de conversor buck com IGBT.}
+                \end{figure}
 
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.5\textwidth]{./images/Entrada_saida.png}
+                    \caption{Exemplo de formas de onda de entrada e saída do conversor buck.}
+                \end{figure}
 
-            \item \textbf{Circuito de Controle de um Aquecedor por Indução:}
-            \begin{itemize}
-                \item \textbf{Propósito:} Gerar um campo magnético de alta frequência para aquecer objetos metálicos, como em fogões de indução.
-                \item \textbf{Simulação:} Modelar um circuito ressonante RLC. O IGBT é usado em uma configuração de inversor para alimentar este circuito na sua frequência natural.
-                \item \textbf{O que observar:} O chaveamento em tensão zero (ZVS) ou corrente zero (ZCS) para minimizar as perdas de comutação.
-            \end{itemize}
-        \end{enumerate}
+            \subsection{Circuito de Controle de um Aquecedor por Indução}
+                \textbf{Funcionamento:} O circuito utiliza um IGBT como chave principal para controlar a corrente que flui através de uma bobina de indução. Um oscilador de alta frequência (geralmente na faixa de dezenas a centenas de kHz) gera um sinal PWM que aciona o gate do IGBT. Quando o IGBT liga, a corrente flui pela bobina, criando um campo magnético. Quando o IGBT desliga, o campo magnético colapsa, induzindo uma alta tensão na bobina e gerando correntes parasitas (correntes de Foucault) no objeto metálico colocado próximo à bobina. Essas correntes aquecem o objeto devido à sua resistência. O IGBT é ideal para essa aplicação devido à sua capacidade de chavear altas correntes e tensões em frequências elevadas, com perdas de condução relativamente baixas.
+
+                \begin{figure}[htpb!]
+                    \centering
+                    \includegraphics[width=0.5\textwidth]{./images/aquecedor_inducao.png}
+                    \caption{Circuito de aquecedor por indução com IGBT.}
+                \end{figure}
 
 
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.35\textwidth]{./images/aquecedor_inducao.png}
-            \caption{Circuito de aquecedor por indução com IGBT.}
-        \end{figure}
 
 \section{Conclusões}
     Este trabalho sintetiza as características fundamentais e as aplicações práticas dos três principais tipos de transistores de efeito de campo analisados: JFET, MOSFET e IGBT. A análise comparativa mostrou que cada tecnologia tem vantagens específicas que a tornam mais adequada a determinadas funções: o JFET destaca-se pela alta impedância de entrada e baixo ruído, sendo ideal para estágios de entrada de instrumentação e amplificadores de baixa potência; o MOSFET oferece alta impedância, comutação rápida e excelente desempenho em aplicações tanto digitais quanto analógicas de média potência; já o IGBT combina a facilidade de acionamento do MOSFET com a capacidade de conduzir altas correntes e suportar elevadas tensões, sendo a escolha natural para aplicações de potência (conversores, inversores e acionamento de motores).
 
     Além das diferenças elétricas, discutimos aspectos de projeto relevantes — como geometria do canal, dopagem, estrutura de gate e efeitos parasitários (por exemplo, o tiristor parasitário no IGBT que pode causar latch-up) — que influenciam diretamente parâmetros práticos: eficiência de condução, perdas de comutação, linearidade e comportamento térmico. Essas considerações reforçam que a seleção entre JFET, MOSFET e IGBT não é apenas uma questão de preferência, mas de adequação técnica ao requisito de circuito: sensibilidade ao ruído, faixa de frequência, dissipação de potência, e exigências de comutação.
-    
+
     Em termos práticos, a conclusão principal é que entender as limitações físicas e os trade-offs de cada dispositivo permite projetar circuitos mais eficientes e confiáveis. Projetos de baixa potência e alta fidelidade favorecerão dispositivos de alta impedância e baixo ruído (como JFETs e MOSFETs de pequena sinal), enquanto aplicações de potência exigirão MOSFETs de potência ou IGBTs com topologias e técnicas de acionamento apropriadas para minimizar perdas e evitar fenômenos indesejáveis (como corrente de cauda e latch-up). Finalmente, a integração adequada de aspectos de projeto, simulação e testes experimentais é essencial para garantir desempenho e segurança em aplicações reais.
 
 \newpage
