@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1761244151.57778 "main.aux" "main.bbl" "main" 1761244151.82676 0
+["bibtex main"] 1761244444.18986 "main.aux" "main.bbl" "main" 1761245025.09535 0
   "./referencia.bib" 1761244151 2070 44328f3e8d17d2ab3fdccc52e2408f42 ""
   "C:/Users/danil/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/abbrvnat.bst" 1284455456 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "main.aux" 1761244118 11217 119ac9dfa8db6678b5fe6c62c2ddacf0 "pdflatex"
+  "main.aux" 1761245024 11085 172556a8398a8038e32a89bb0c7d5175 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761244117.4778 "c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex" "main.pdf" "main" 1761244151.82698 0
+["pdflatex"] 1761245022.89358 "c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex" "main.pdf" "main" 1761245025.09594 0
   "C:/Users/danil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760296415 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/danil/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1760899710 14064 98df6cbc7966495be9d7d6c0be9e234d ""
   "C:/Users/danil/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760125351 24225047 4b659f8f67908c521c66e4a31659efda ""
@@ -95,7 +95,7 @@
   "C:/Users/danil/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/danil/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/danil/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex" 1760905907 49136 26610d998128570116c2b42610d87c1d ""
+  "c:/Users/danil/Desktop/Diversos/Área de Trabalho/Pasta Engenharia aeroespacial/Materias_Faculdade/Eletroanal/T2_Eletronica_Analogica/Trabalho_2/main.tex" 1761245022 49421 73e0846010d3755d3ce6bf6e6cd7b2ae ""
   "images/Amplificador banda larga.jpg" 1760899701 51291 6d29111f359cdc7f4e770e741fb1770d ""
   "images/Captura de tela 2025-10-18 223003.png" 1760899701 97202 feb203d033f660beb382ccd1b762852b ""
   "images/Dell_Professional_P2212H_-_power_supply_board_-_K4101FS-2149.jpg" 1760840480 182305 804822a4ad1a025e078856d026454772 ""
@@ -120,11 +120,11 @@
   "images/tiristor.png" 1760295646 30779 18284f1ac6fcfd419dcc489518af4ccd ""
   "images/transisCampo.jpg" 1760840480 40419 e14283e47d5f3bee84cd656cabfa923a ""
   "images/vertical_sigla_fundo_claro.png" 1760118565 207833 c9750bbe9a5139811097a393c32f4f44 ""
-  "main.aux" 1761244118 11217 119ac9dfa8db6678b5fe6c62c2ddacf0 "pdflatex"
-  "main.bbl" 1761244151 1471 4194315b575940bf58eb2cc311e58f13 "bibtex main"
-  "main.out" 1761244118 9164 5532b20ab04b6504addb24259800f191 "pdflatex"
-  "main.tex" 1760905907 49136 26610d998128570116c2b42610d87c1d ""
-  "main.toc" 1761244118 4369 7b0aba89d16d2d18bf418024725a67e5 "pdflatex"
+  "main.aux" 1761245024 11085 172556a8398a8038e32a89bb0c7d5175 "pdflatex"
+  "main.bbl" 1761244444 1471 4194315b575940bf58eb2cc311e58f13 "bibtex main"
+  "main.out" 1761245024 8953 e4f11f23badc8d4a7fd893fe7c167147 "pdflatex"
+  "main.tex" 1761245022 49421 73e0846010d3755d3ce6bf6e6cd7b2ae ""
+  "main.toc" 1761245024 4278 2ff0987e09aa0efe8d34b0d79d82de1a "pdflatex"
   (generated)
   "main.aux"
   "main.log"
